@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us — Johnny's Diner" description="Get in touch with Johnny's Diner on Curry Ford Road, Orlando FL. Call, email, or visit us.">
+  <!-- Header -->
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h1 class="font-display text-4xl md:text-5xl mb-2">Contact Us</h1>
+      <p class="text-lg font-light">We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Info -->
+      <div>
+        <h2 class="font-display text-diner-red text-2xl mb-6">Get In Touch</h2>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold text-diner-dark mb-1">Phone</h3>
+            <a href="tel:+14078688267" class="text-diner-red hover:text-diner-red-dark transition-colors">(407) 868-8267</a>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-diner-dark mb-1">Email</h3>
+            <a href="mailto:info@johnnysdiner.co" class="text-diner-red hover:text-diner-red-dark transition-colors">info@johnnysdiner.co</a>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-diner-dark mb-1">Address</h3>
+            <address class="not-italic text-diner-gray">
+              3335 Curry Ford Rd<br/>
+              Orlando, FL 32806
+            </address>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-diner-dark mb-1">Hours</h3>
+            <p class="text-diner-gray text-sm">
+              Mon &ndash; Sat: 6:00 AM &ndash; 3:00 PM<br/>
+              Sunday: 7:00 AM &ndash; 3:00 PM<br/>
+              <span class="text-xs text-diner-gray/60">Holiday hours may vary. Please call ahead.</span>
+            </p>
+          </div>
+
+          <div>
+            <a href="https://maps.google.com/?q=3335+Curry+Ford+Rd+Orlando+FL+32806" target="_blank" rel="noopener" class="inline-block bg-diner-red text-white font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-diner-red-dark transition-colors">
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h2 class="font-display text-diner-red text-2xl mb-6">Send a Message</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="contact-first" class="block text-sm font-medium text-diner-dark mb-1">First Name</label>
+              <input type="text" id="contact-first" name="first_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            </div>
+            <div>
+              <label for="contact-last" class="block text-sm font-medium text-diner-dark mb-1">Last Name</label>
+              <input type="text" id="contact-last" name="last_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            </div>
+          </div>
+          <div>
+            <label for="contact-phone" class="block text-sm font-medium text-diner-dark mb-1">Phone</label>
+            <input type="tel" id="contact-phone" name="phone" class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+          </div>
+          <div>
+            <label for="contact-email" class="block text-sm font-medium text-diner-dark mb-1">Email *</label>
+            <input type="email" id="contact-email" name="email" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+          </div>
+          <div>
+            <label for="contact-message" class="block text-sm font-medium text-diner-dark mb-1">Message *</label>
+            <textarea id="contact-message" name="message" rows="5" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red resize-y"></textarea>
+          </div>
+          <label class="flex items-start gap-2 text-sm text-diner-gray">
+            <input type="checkbox" name="consent" required class="accent-diner-red mt-0.5" />
+            <span>I consent to being contacted by Johnny's Diner via phone, email, or text regarding my inquiry.</span>
+          </label>
+          <button type="submit" class="w-full bg-diner-red text-white font-semibold py-3 rounded-full hover:bg-diner-red-dark transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="max-w-4xl mx-auto px-4 pb-16">
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5!2d-81.345!3d28.535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77b5e5e5e5e5e%3A0x0!2s3335+Curry+Ford+Rd%2C+Orlando%2C+FL+32806!5e0!3m2!1sen!2sus!4v1"
+        width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Johnny's Diner location"
+      ></iframe>
+    </div>
+  </section>
+</Layout>

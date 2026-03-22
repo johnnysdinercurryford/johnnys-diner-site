@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Johnny's Diner — Best Breakfast in Orlando Since 1995">
+  <!-- Hero -->
+  <section class="relative bg-diner-red overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-32 text-center text-white">
+      <h1 class="font-display text-5xl md:text-7xl mb-4">Johnny's Diner</h1>
+      <p class="text-lg md:text-xl font-light max-w-xl mx-auto mb-8">
+        Family owned & operated &mdash; Homestyle cooking since '95
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/menu" class="inline-block bg-white text-diner-red font-semibold px-8 py-3 rounded-full hover:bg-diner-cream transition-colors">
+          View Our Menu
+        </a>
+        <a href="tel:+14078688267" class="inline-block border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white/10 transition-colors">
+          Call (407) 868-8267
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section class="max-w-6xl mx-auto px-4 -mt-8 relative z-10">
+    <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 max-w-lg mx-auto text-center">
+      <h2 class="font-display text-diner-red text-2xl mb-3">Hours</h2>
+      <div class="text-sm space-y-1">
+        <p><span class="font-medium">Monday &ndash; Saturday:</span> 6:00 AM &ndash; 3:00 PM</p>
+        <p><span class="font-medium">Sunday:</span> 7:00 AM &ndash; 3:00 PM</p>
+        <p class="text-diner-gray text-xs mt-2">Holiday hours may vary. Please call ahead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Snippet -->
+  <section class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-display text-diner-red text-3xl md:text-4xl mb-4">Since 1995</h2>
+        <p class="text-diner-gray leading-relaxed mb-4">
+          What started as a humble 8-booth diner on Curry Ford Road has grown alongside the neighborhood
+          into Orlando's go-to spot for homestyle cookin'. We serve it hot off the flat-top,
+          with friendly faces and a fresh pot of coffee.
+        </p>
+        <p class="text-diner-gray leading-relaxed mb-6">
+          From fluffy buttermilk pancakes to hand-formed burgers and stacked sandwiches &mdash;
+          you're family the moment you walk in.
+        </p>
+        <a href="/about" class="text-diner-red font-semibold hover:text-diner-red-dark transition-colors">
+          Read Our Story &rarr;
+        </a>
+      </div>
+      <div class="bg-diner-warm rounded-2xl p-8 text-center">
+        <div class="font-display text-6xl text-diner-red mb-2">31</div>
+        <p class="text-diner-gray">Years Serving Orlando</p>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <div class="bg-white rounded-xl p-4">
+            <div class="font-semibold text-diner-dark">2023</div>
+            <p class="text-diner-gray text-xs mt-1">Orlando Sentinel &mdash; Best Breakfast in Orlando</p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <div class="font-semibold text-diner-dark">2024</div>
+            <p class="text-diner-gray text-xs mt-1">Orlando Weekly &mdash; Best East Orlando Restaurant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="bg-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-diner-red text-3xl md:text-4xl text-center mb-12">Why Orlando Loves Us</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-diner-warm rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-diner-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-diner-dark mb-2">All-Day Breakfast</h3>
+          <p class="text-sm text-diner-gray">Pancakes, omelettes, biscuits & gravy &mdash; served from open to close. No rush.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-diner-warm rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-diner-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-diner-dark mb-2">Bottomless Coffee</h3>
+          <p class="text-sm text-diner-gray">Your cup never goes empty. We'll keep you topped off while you enjoy your meal.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-diner-warm rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-diner-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-diner-dark mb-2">Community First</h3>
+          <p class="text-sm text-diner-gray">Proud member of the Curry Ford West community. We partner with local farms and bakeries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div class="grid md:grid-cols-2">
+        <div class="p-8 md:p-12">
+          <h2 class="font-display text-diner-red text-3xl mb-4">Find Us</h2>
+          <address class="not-italic text-diner-gray leading-relaxed">
+            <p class="font-semibold text-diner-dark mb-2">Johnny's Diner</p>
+            <p>3335 Curry Ford Rd<br/>Orlando, FL 32806</p>
+            <p class="mt-3">
+              <a href="tel:+14078688267" class="text-diner-red hover:text-diner-red-dark transition-colors">(407) 868-8267</a>
+            </p>
+            <p class="mt-1">
+              <a href="mailto:info@johnnysdiner.co" class="text-diner-red hover:text-diner-red-dark transition-colors">info@johnnysdiner.co</a>
+            </p>
+          </address>
+          <div class="mt-6">
+            <a href="https://maps.google.com/?q=3335+Curry+Ford+Rd+Orlando+FL+32806" target="_blank" rel="noopener" class="inline-block bg-diner-red text-white font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-diner-red-dark transition-colors">
+              Get Directions
+            </a>
+          </div>
+        </div>
+        <div class="bg-diner-warm min-h-[300px] flex items-center justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5!2d-81.345!3d28.535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77b5e5e5e5e5e%3A0x0!2s3335+Curry+Ford+Rd%2C+Orlando%2C+FL+32806!5e0!3m2!1sen!2sus!4v1"
+            width="100%" height="100%" style="border:0; min-height:300px;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Johnny's Diner location map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h2 class="font-display text-3xl md:text-4xl mb-4">Hungry Yet?</h2>
+      <p class="text-lg mb-8 max-w-md mx-auto">Come see us on Curry Ford. Breakfast served all day, smiles always free.</p>
+      <a href="/menu" class="inline-block bg-white text-diner-red font-semibold px-8 py-3 rounded-full hover:bg-diner-cream transition-colors">
+        Check Out the Menu
+      </a>
+    </div>
+  </section>
+</Layout>

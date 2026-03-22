@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import menuData from '../data/menu.json';
+---
+
+<Layout title="Menu — Johnny's Diner" description="Full menu at Johnny's Diner — breakfast served all day, burgers, sandwiches, dinners, and more. Classic homestyle food in Orlando, FL.">
+  <!-- Header -->
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h1 class="font-display text-4xl md:text-5xl mb-2">Our Menu</h1>
+      <p class="text-lg font-light">Classic favorites, made fresh daily</p>
+    </div>
+  </section>
+
+  <!-- Category Navigation -->
+  <nav class="sticky top-[57px] z-40 bg-white border-b border-diner-border shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 overflow-x-auto">
+      <ul class="flex gap-2 min-w-max">
+        {menuData.categories.map((cat) => (
+          <li>
+            <a
+              href={`#${cat.id}`}
+              class="inline-block px-4 py-1.5 rounded-full text-sm font-medium border border-diner-border hover:bg-diner-red hover:text-white hover:border-diner-red transition-colors"
+            >
+              {cat.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu Categories -->
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    {menuData.categories.map((category) => (
+      <section id={category.id} class="mb-16 scroll-mt-32">
+        <div class="text-center mb-8">
+          <h2 class="font-display text-diner-red text-3xl md:text-4xl">{category.name}</h2>
+          {category.note && <p class="text-sm text-diner-gray mt-1">{category.note}</p>}
+        </div>
+
+        {category.subcategories.map((sub) => (
+          <div class="mb-10">
+            <h3 class="font-semibold text-lg text-diner-dark mb-1 border-b border-diner-border pb-2">{sub.name}</h3>
+            {sub.note && <p class="text-xs text-diner-gray mb-3 italic">{sub.note}</p>}
+
+            <ul class="divide-y divide-diner-border/50">
+              {sub.items.map((item) => (
+                <li class="flex justify-between items-baseline py-3 gap-4">
+                  <div>
+                    <span class="font-medium text-diner-dark">{item.name}</span>
+                  </div>
+                  <span class="text-diner-red font-semibold whitespace-nowrap">
+                    ${item.price.toFixed(2)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    ))}
+
+    <p class="text-center text-sm text-diner-gray mt-8">
+      Ask about our daily specials! Prices subject to change. Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
+    </p>
+  </div>
+</Layout>

@@ -1,0 +1,213 @@
+{
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "note": "Served Anytime",
+      "subcategories": [
+        {
+          "name": "Breakfast Sandwiches",
+          "note": "White or wheat; rye, muffin, or biscuit add 50\u00a2",
+          "items": [
+            { "name": "Sausage, Egg & Cheese", "price": 6.75 },
+            { "name": "Ham, Egg & Cheese", "price": 6.75 },
+            { "name": "Bacon, Egg & Cheese", "price": 6.75 }
+          ]
+        },
+        {
+          "name": "Breakfast Entrees",
+          "items": [
+            { "name": "1/2 Order Biscuits & Gravy", "price": 6.00 },
+            { "name": "Biscuits & Gravy", "price": 7.75 },
+            { "name": "Biscuits & Gravy With Two Eggs", "price": 8.75 },
+            { "name": "Biscuits & Gravy With Two Eggs And Ham", "price": 9.75 },
+            { "name": "French Toast", "price": 7.75 },
+            { "name": "French Toast With Choice Of Ham, Bacon Or Sausage", "price": 8.75 },
+            { "name": "Blueberry Pancakes", "price": 8.75 },
+            { "name": "Blueberry Pancakes With Choice Of Ham, Bacon Or Sausage", "price": 9.75 }
+          ]
+        },
+        {
+          "name": "Omelettes",
+          "note": "Made with extra-large eggs; includes toast and hash browns or grits",
+          "items": [
+            { "name": "Sausage & Cheese Omelette", "price": 10.25 },
+            { "name": "Feta Cheese Omelette", "price": 10.75 },
+            { "name": "Mushroom Omelette", "price": 10.75 },
+            { "name": "Johnny Omelette", "price": 12.95 },
+            { "name": "German Omelette", "price": 12.95 },
+            { "name": "Southern Omelette", "price": 12.95 },
+            { "name": "Vegetarian Omelette", "price": 12.95 },
+            { "name": "Greek Omelette", "price": 12.95 }
+          ]
+        },
+        {
+          "name": "Breakfast Sides",
+          "items": [
+            { "name": "One Egg", "price": 2.50 },
+            { "name": "Two Eggs", "price": 4.00 },
+            { "name": "Bagel With Cream Cheese", "price": 3.75 },
+            { "name": "Grits", "price": 3.75 },
+            { "name": "Hash Browns Idaho's Finest", "price": 3.75 },
+            { "name": "Four Strips Of Bacon", "price": 4.75 },
+            { "name": "Four Links Of Sausage", "price": 4.75 },
+            { "name": "Four Slices Of Fried Ham", "price": 4.75 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "small-plates",
+      "name": "Small Plates & Appetizers",
+      "subcategories": [
+        {
+          "name": "Soups",
+          "items": [
+            { "name": "Cup of Soup of The Day", "price": 4.50 },
+            { "name": "Bowl of Soup of The Day", "price": 5.75 }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            { "name": "Tossed Salad", "price": 4.50 },
+            { "name": "Baby Greek Salad", "price": 7.50 },
+            { "name": "Greek Salad (Medium)", "price": 8.50 },
+            { "name": "Chicken Salad Plate", "price": 8.75 },
+            { "name": "Tuna Salad Plate", "price": 8.75 },
+            { "name": "Greek Salad (Large)", "price": 9.50 },
+            { "name": "Chef Salad", "price": 9.50 }
+          ]
+        },
+        {
+          "name": "Side Orders",
+          "items": [
+            { "name": "Sliced Tomatoes", "price": 2.50 },
+            { "name": "Pita Bread", "price": 3.25 },
+            { "name": "Cole Slaw", "price": 3.50 },
+            { "name": "French Fries", "price": 3.50 },
+            { "name": "Onion Rings", "price": 6.00 },
+            { "name": "Fried Pickles", "price": 6.75 },
+            { "name": "Fried Mozzarella Cheese Sticks", "price": 7.95 },
+            { "name": "Fried Mushrooms w/ Ranch", "price": 7.95 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handhelds",
+      "name": "Handhelds",
+      "subcategories": [
+        {
+          "name": "Sandwiches",
+          "note": "Served deluxe with fries & cole slaw, or chips add $3.50",
+          "items": [
+            { "name": "Tuna Salad Sandwich", "price": 7.25 },
+            { "name": "Chicken Salad Sandwich", "price": 7.25 },
+            { "name": "Bacon, Lettuce & Tomato", "price": 7.25 },
+            { "name": "Turkey Sandwich", "price": 7.75 },
+            { "name": "Breaded Pork Sandwich", "price": 7.95 },
+            { "name": "Tuna Melt", "price": 8.25 },
+            { "name": "Club Sandwich", "price": 8.50 },
+            { "name": "Fish Sandwich", "price": 8.75 }
+          ]
+        },
+        {
+          "name": "1/3 LB. Burgers",
+          "note": "Served deluxe; add $3.50 for sides. Add cheese 75\u00a2",
+          "items": [
+            { "name": "Hamburger", "price": 8.25 },
+            { "name": "Patty Melt", "price": 9.75 },
+            { "name": "Mushroom Burger", "price": 9.75 },
+            { "name": "Bacon Burger", "price": 9.75 }
+          ]
+        },
+        {
+          "name": "1/4 LB. Burgers",
+          "note": "Served deluxe; add $3.50 for sides",
+          "items": [
+            { "name": "Hamburger", "price": 6.25 },
+            { "name": "Patty Melt", "price": 7.75 },
+            { "name": "Mushroom Burger", "price": 7.75 },
+            { "name": "Bacon Burger", "price": 7.75 }
+          ]
+        },
+        {
+          "name": "Pita Sandwiches",
+          "items": [
+            { "name": "Grilled Cheese Pita", "price": 5.25 },
+            { "name": "Tuna or Chicken Salad Pita", "price": 7.50 },
+            { "name": "Chicken Pita", "price": 7.95 },
+            { "name": "Vegetarian Pita", "price": 7.95 },
+            { "name": "Sliced Turkey Pita", "price": 7.95 },
+            { "name": "Gyro Pita", "price": 8.75 },
+            { "name": "Chicken Gyro Pita", "price": 8.75 },
+            { "name": "Gyro & Feta Pita", "price": 9.25 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinners",
+      "name": "Dinners",
+      "note": "Include soup, salad or cole slaw",
+      "subcategories": [
+        {
+          "name": "Entrees",
+          "items": [
+            { "name": "Meatloaf", "price": 13.99 },
+            { "name": "Ground Round Steak", "price": 13.99 },
+            { "name": "Chicken Strips", "price": 13.99 },
+            { "name": "Country Fried Steak", "price": 13.99 },
+            { "name": "Breaded Pork", "price": 13.99 },
+            { "name": "Liver & Onions", "price": 13.99 },
+            { "name": "Breaded Veal", "price": 13.99 },
+            { "name": "Hot Turkey Sandwich", "price": 13.99 }
+          ]
+        },
+        {
+          "name": "Seafood",
+          "items": [
+            { "name": "Fish & Chips", "price": 14.75 },
+            { "name": "Shrimp & Chips", "price": 14.75 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kids",
+      "name": "Kids Menu",
+      "note": "Age 12 and under; dine-in only",
+      "subcategories": [
+        {
+          "name": "Kids Favorites",
+          "items": [
+            { "name": "Grilled Cheese", "price": 4.95 },
+            { "name": "1/4 Lb. Hamburger Patty", "price": 6.25 },
+            { "name": "Two Golden Brown Pancakes", "price": 7.75 },
+            { "name": "Chicken Strips", "price": 13.99 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "subcategories": [
+        {
+          "name": "Drinks",
+          "items": [
+            { "name": "Milk (Small)", "price": 2.95 },
+            { "name": "Small Juice", "price": 2.95 },
+            { "name": "Soft Drinks", "price": 2.99 },
+            { "name": "Hot Chocolate", "price": 2.99 },
+            { "name": "Tea", "price": 2.99 },
+            { "name": "Decaffeinated Coffee", "price": 2.99 },
+            { "name": "Milk (Large)", "price": 3.50 },
+            { "name": "Large Juice", "price": 3.50 }
+          ]
+        }
+      ]
+    }
+  ]
+}
