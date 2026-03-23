@@ -85,38 +85,38 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
           <div class="grid md:grid-cols-2 gap-4">
             <div>
               <label for="first-name" class="block text-sm font-medium text-diner-dark mb-1">First Name *</label>
-              <input type="text" id="first-name" name="first_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" id="first-name" name="first_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
             <div>
               <label for="last-name" class="block text-sm font-medium text-diner-dark mb-1">Last Name *</label>
-              <input type="text" id="last-name" name="last_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" id="last-name" name="last_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
           </div>
           <div class="grid md:grid-cols-2 gap-4 mt-4">
             <div>
               <label for="email" class="block text-sm font-medium text-diner-dark mb-1">Email *</label>
-              <input type="email" id="email" name="email" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="email" id="email" name="email" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
             <div>
               <label for="phone" class="block text-sm font-medium text-diner-dark mb-1">Phone *</label>
-              <input type="tel" id="phone" name="phone" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="tel" id="phone" name="phone" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
           </div>
           <div class="mt-4">
             <label for="dob" class="block text-sm font-medium text-diner-dark mb-1">Date of Birth *</label>
-            <input type="date" id="dob" name="date_of_birth" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            <input type="date" id="dob" name="date_of_birth" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
           </div>
           <div class="mt-4 space-y-3">
             <label class="block text-sm font-medium text-diner-dark">Address *</label>
-            <input type="text" name="address_line1" placeholder="Address Line 1" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
-            <input type="text" name="address_line2" placeholder="Address Line 2" class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            <input type="text" name="address_line1" placeholder="Address Line 1" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            <input type="text" name="address_line2" placeholder="Address Line 2" class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             <div class="grid grid-cols-5 gap-3">
-              <input type="text" name="city" placeholder="City" required class="col-span-2 rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" name="city" placeholder="City" required class="col-span-2 rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
               <select name="state" required class="col-span-1 rounded-lg border border-diner-border px-2 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red">
                 <option value="">State</option>
                 {states.map((s) => <option value={s}>{s}</option>)}
               </select>
-              <input type="text" name="zip" placeholder="Zip" required class="col-span-2 rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" name="zip" placeholder="Zip" required class="col-span-2 rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
           </div>
         </fieldset>
@@ -127,14 +127,14 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
           <div class="grid md:grid-cols-2 gap-4">
             <div>
               <label for="position" class="block text-sm font-medium text-diner-dark mb-1">Position Applying For *</label>
-              <select id="position" name="position" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red">
+              <select id="position" name="position" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red">
                 <option value="">Select a position</option>
                 {allPositions.map((p) => <option value={p}>{p}</option>)}
               </select>
             </div>
             <div>
               <label for="start-date" class="block text-sm font-medium text-diner-dark mb-1">How Soon Can You Start? *</label>
-              <input type="text" id="start-date" name="start_date" required placeholder="e.g., Immediately, 2 weeks" class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" id="start-date" name="start_date" required placeholder="e.g., Immediately, 2 weeks" class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
           </div>
           <div class="grid md:grid-cols-2 gap-4 mt-4">
@@ -191,7 +191,7 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
             </div>
             <div>
               <label for="education" class="block text-sm font-medium text-diner-dark mb-1">Highest Education *</label>
-              <select id="education" name="education" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red">
+              <select id="education" name="education" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red">
                 <option value="">Select</option>
                 {educationLevels.map((lvl) => <option value={lvl}>{lvl}</option>)}
               </select>
@@ -221,10 +221,10 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
         <fieldset>
           <legend class="font-semibold text-diner-dark text-lg mb-4">References</legend>
           {[1, 2, 3].map((n) => (
-            <div class="grid grid-cols-3 gap-3 mb-3">
-              <input type="text" name={`ref_name_${n}`} placeholder={`Reference ${n} name`} required class="rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
-              <input type="text" name={`ref_relation_${n}`} placeholder="Relation" required class="rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
-              <input type="tel" name={`ref_phone_${n}`} placeholder="Phone" required class="rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+              <input type="text" name={`ref_name_${n}`} placeholder={`Reference ${n} name`} required class="rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="text" name={`ref_relation_${n}`} placeholder="Relation" required class="rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+              <input type="tel" name={`ref_phone_${n}`} placeholder="Phone" required class="rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
             </div>
           ))}
         </fieldset>
@@ -260,7 +260,7 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
         <!-- Why Join -->
         <div>
           <label for="why-join" class="block text-sm font-medium text-diner-dark mb-1">Why do you want to join our team? *</label>
-          <textarea id="why-join" name="why_join" rows="4" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red resize-y"></textarea>
+          <textarea id="why-join" name="why_join" rows="4" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red resize-y"></textarea>
         </div>
 
         <!-- Consent & Submit -->
