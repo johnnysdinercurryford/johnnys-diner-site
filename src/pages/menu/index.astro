@@ -1,17 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import menuData from '../../data/menu.json';
 
-const categories = [
-  { id: 'breakfast', name: 'Breakfast', subtitle: 'Served Anytime' },
-  { id: 'small-plates', name: 'Small Plates & Appetizers', subtitle: 'Soups, Salads & Sides' },
-  { id: 'handhelds', name: 'Handhelds', subtitle: 'Sandwiches & Burgers' },
-  { id: 'dinners', name: 'Dinners', subtitle: 'Includes Soup, Salad or Cole Slaw' },
-  { id: 'kids', name: "Kids Menu", subtitle: 'Age 12 & Under' },
-  { id: 'beverages', name: 'Beverages', subtitle: 'Drinks & More' },
-];
+const categories = menuData.categories;
 ---
 
 <Layout title="Menu — Johnny's Diner">
+  <!-- Hero -->
   <section class="bg-diner-red relative overflow-hidden">
     <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
@@ -20,14 +15,55 @@ const categories = [
     </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-4 py-16">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {categories.map((cat) => (
-        <a href={`/menu/${cat.id}`} class="bg-white rounded-2xl p-8 shadow-sm border border-diner-border hover:shadow-md hover:border-diner-red transition-all group text-center">
-          <h2 class="font-display text-diner-red text-xl group-hover:text-diner-red-dark transition-colors">{cat.name}</h2>
-          <p class="text-sm text-diner-gray mt-2">{cat.subtitle}</p>
-        </a>
-      ))}
+  <!-- Sticky Category Tabs -->
+  <nav class="bg-white border-b border-diner-border sticky top-[64px] z-40 overflow-x-auto">
+    <div class="max-w-6xl mx-auto px-4">
+      <ul class="flex gap-1 py-2 whitespace-nowrap">
+        {categories.map((cat) => (
+          <li>
+            <a
+              href={`#${cat.id}`}
+              class="px-4 py-2 rounded-full text-sm font-medium text-diner-gray hover:text-diner-red hover:bg-diner-warm transition-colors"
+            >
+              {cat.name}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
-  </section>
+  </nav>
+
+  <!-- All Categories -->
+  <div class="max-w-6xl mx-auto px-4 py-12 space-y-20">
+    {categories.map((cat) => (
+      <section id={cat.id} class="scroll-mt-28">
+        <!-- Category Header -->
+        <div class="mb-8 pb-4 border-b border-diner-border">
+          <h2 class="font-display text-diner-red text-3xl">{cat.name}</h2>
+          {cat.note && <p class="text-diner-gray mt-1">{cat.note}</p>}
+        </div>
+
+        <!-- Subcategories -->
+        {cat.subcategories.map((sub) => (
+          <div class="mb-10">
+            <div class="mb-4">
+              <h3 class="font-semibold text-diner-dark text-lg">{sub.name}</h3>
+              {sub.note && <p class="text-sm text-diner-gray italic mt-0.5">{sub.note}</p>}
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {sub.items.map((item) => (
+                <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border hover:shadow-md transition-shadow">
+                  <div class="flex justify-between items-start gap-2 mb-2">
+                    <h4 class="font-semibold text-diner-dark leading-snug">{item.name}</h4>
+                    <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>
+                  </div>
+                  {item.description && <p class="text-sm text-diner-gray leading-relaxed">{item.description}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+    ))}
+  </div>
 </Layout>
