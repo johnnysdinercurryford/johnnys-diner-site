@@ -8,7 +8,7 @@ const categories = menuData.categories;
 <Layout title="Menu — Johnny's Diner">
   <!-- Hero -->
   <section class="bg-diner-red relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
       <h1 class="font-display text-4xl md:text-5xl mb-2">Our Menu</h1>
       <p class="text-lg font-light">Classic homestyle cooking — made fresh every day</p>
@@ -52,7 +52,7 @@ const categories = menuData.categories;
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {sub.items.map((item) => (
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border hover:shadow-md transition-shadow">
+                <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border card-lift">
                   <div class="flex justify-between items-start gap-2 mb-2">
                     <h4 class="font-semibold text-diner-dark leading-snug">{item.name}</h4>
                     <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>

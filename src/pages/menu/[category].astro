@@ -16,7 +16,7 @@ const allCategories = menuData.categories;
 <Layout title={`${category.name} — Johnny's Diner`}>
   <!-- Hero -->
   <section class="bg-diner-red relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-12 text-center text-white">
       <a href="/menu" class="text-sm uppercase tracking-widest font-medium opacity-80 hover:opacity-100 transition-opacity">← Full Menu</a>
       <h1 class="font-display text-4xl md:text-5xl mt-2">{category.name}</h1>
@@ -56,7 +56,7 @@ const allCategories = menuData.categories;
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sub.items.map((item) => (
-            <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border hover:shadow-md transition-shadow">
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border card-lift">
               <div class="flex justify-between items-start gap-2 mb-2">
                 <h3 class="font-semibold text-diner-dark leading-snug">{item.name}</h3>
                 <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>
