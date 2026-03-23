@@ -3,8 +3,12 @@
 @theme {
   --color-diner-red: #E53935;
   --color-diner-red-dark: #C62828;
+  --color-diner-red-light: #FFF1EF;
+  --color-diner-red-tint: #FFE5E5;
   --color-diner-cream: #FFFAF8;
   --color-diner-warm: #FFF5F0;
+  --color-diner-yellow: #FFF8E1;
+  --color-diner-gold: #F59E0B;
   --color-diner-dark: #1A1A1A;
   --color-diner-gray: #4A4A4A;
   --color-diner-border: #E8E0DC;
