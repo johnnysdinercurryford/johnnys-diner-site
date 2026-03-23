@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const categories = [
+  { id: 'breakfast', name: 'Breakfast', subtitle: 'Served Anytime' },
+  { id: 'small-plates', name: 'Small Plates & Appetizers', subtitle: 'Soups, Salads & Sides' },
+  { id: 'handhelds', name: 'Handhelds', subtitle: 'Sandwiches & Burgers' },
+  { id: 'dinners', name: 'Dinners', subtitle: 'Includes Soup, Salad or Cole Slaw' },
+  { id: 'kids', name: "Kids Menu", subtitle: 'Age 12 & Under' },
+  { id: 'beverages', name: 'Beverages', subtitle: 'Drinks & More' },
+];
+---
+
+<Layout title="Menu — Johnny's Diner">
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h1 class="font-display text-4xl md:text-5xl mb-2">Our Menu</h1>
+      <p class="text-lg font-light">Classic homestyle cooking — made fresh every day</p>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {categories.map((cat) => (
+        <a href={`/menu/${cat.id}`} class="bg-white rounded-2xl p-8 shadow-sm border border-diner-border hover:shadow-md hover:border-diner-red transition-all group text-center">
+          <h2 class="font-display text-diner-red text-xl group-hover:text-diner-red-dark transition-colors">{cat.name}</h2>
+          <p class="text-sm text-diner-gray mt-2">{cat.subtitle}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

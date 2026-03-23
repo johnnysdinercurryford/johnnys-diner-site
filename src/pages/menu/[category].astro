@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import menuData from '../../data/menu.json';
+
+export function getStaticPaths() {
+  return menuData.categories.map((cat) => ({
+    params: { category: cat.id },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+const allCategories = menuData.categories;
+---
+
+<Layout title={`${category.name} — Johnny's Diner`}>
+  <!-- Hero -->
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-12 text-center text-white">
+      <a href="/menu" class="text-sm uppercase tracking-widest font-medium opacity-80 hover:opacity-100 transition-opacity">← Full Menu</a>
+      <h1 class="font-display text-4xl md:text-5xl mt-2">{category.name}</h1>
+      {category.note && <p class="mt-2 text-lg font-light opacity-90">{category.note}</p>}
+    </div>
+  </section>
+
+  <!-- Category Tabs -->
+  <nav class="bg-white border-b border-diner-border overflow-x-auto">
+    <div class="max-w-6xl mx-auto px-4">
+      <ul class="flex gap-1 py-2 whitespace-nowrap">
+        {allCategories.map((cat) => (
+          <li>
+            <a
+              href={`/menu/${cat.id}`}
+              class={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                cat.id === category.id
+                  ? 'bg-diner-red text-white'
+                  : 'text-diner-gray hover:text-diner-red hover:bg-diner-warm'
+              }`}
+            >
+              {cat.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu Items -->
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    {category.subcategories.map((sub) => (
+      <div class="mb-12">
+        <div class="mb-6">
+          <h2 class="font-display text-diner-red text-2xl">{sub.name}</h2>
+          {sub.note && <p class="text-sm text-diner-gray mt-1 italic">{sub.note}</p>}
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {sub.items.map((item) => (
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-semibold text-diner-dark leading-snug">{item.name}</h3>
+                <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>
+              </div>
+              {item.description && <p class="text-sm text-diner-gray leading-relaxed">{item.description}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</Layout>

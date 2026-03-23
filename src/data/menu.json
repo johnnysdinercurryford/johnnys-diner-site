@@ -7,51 +7,51 @@
       "subcategories": [
         {
           "name": "Breakfast Sandwiches",
-          "note": "White or wheat; rye, muffin, or biscuit add 50\u00a2",
+          "note": "White or wheat; rye, muffin, or biscuit add 50¢",
           "items": [
-            { "name": "Sausage, Egg & Cheese", "price": 6.75 },
-            { "name": "Ham, Egg & Cheese", "price": 6.75 },
-            { "name": "Bacon, Egg & Cheese", "price": 6.75 }
+            { "name": "Sausage, Egg & Cheese", "price": 6.75, "description": "Juicy sausage paired with a cooked-to-order egg and melted cheese on your choice of bread." },
+            { "name": "Ham, Egg & Cheese", "price": 6.75, "description": "Savory slices of ham stacked with a fluffy egg and melted cheese on your choice of bread." },
+            { "name": "Bacon, Egg & Cheese", "price": 6.75, "description": "Crispy strips of smoky bacon layered with a fresh egg and melted cheese on your choice of bread." }
           ]
         },
         {
           "name": "Breakfast Entrees",
           "items": [
-            { "name": "1/2 Order Biscuits & Gravy", "price": 6.00 },
-            { "name": "Biscuits & Gravy", "price": 7.75 },
-            { "name": "Biscuits & Gravy With Two Eggs", "price": 8.75 },
-            { "name": "Biscuits & Gravy With Two Eggs And Ham", "price": 9.75 },
-            { "name": "French Toast", "price": 7.75 },
-            { "name": "French Toast With Choice Of Ham, Bacon Or Sausage", "price": 8.75 },
-            { "name": "Blueberry Pancakes", "price": 8.75 },
-            { "name": "Blueberry Pancakes With Choice Of Ham, Bacon Or Sausage", "price": 9.75 }
+            { "name": "1/2 Order Biscuits & Gravy", "price": 6.00, "description": "A smaller portion of our fluffy biscuits topped with rich, creamy sausage gravy." },
+            { "name": "Biscuits & Gravy", "price": 7.75, "description": "Fluffy, golden biscuits smothered in rich, savory sausage gravy." },
+            { "name": "Biscuits & Gravy With Two Eggs", "price": 8.75, "description": "Our classic biscuits and gravy topped with two eggs cooked just the way you like them." },
+            { "name": "Biscuits & Gravy With Two Eggs And Ham", "price": 9.75, "description": "Fluffy biscuits and creamy sausage gravy served with two eggs and savory slices of ham." },
+            { "name": "French Toast", "price": 7.75, "description": "Thick slices of bread dipped in a rich egg mixture, griddled to golden brown perfection." },
+            { "name": "French Toast With Choice Of Ham, Bacon Or Sausage", "price": 8.75, "description": "Golden-brown slices of French toast served with your choice of ham, bacon, or sausage." },
+            { "name": "Blueberry Pancakes", "price": 8.75, "description": "A tall stack of fluffy, golden pancakes bursting with juicy blueberries." },
+            { "name": "Blueberry Pancakes With Choice Of Ham, Bacon Or Sausage", "price": 9.75, "description": "Fluffy golden pancakes filled with juicy blueberries, served with your choice of ham, bacon, or sausage." }
           ]
         },
         {
           "name": "Omelettes",
           "note": "Made with extra-large eggs; includes toast and hash browns or grits",
           "items": [
-            { "name": "Sausage & Cheese Omelette", "price": 10.25 },
-            { "name": "Feta Cheese Omelette", "price": 10.75 },
-            { "name": "Mushroom Omelette", "price": 10.75 },
-            { "name": "Johnny Omelette", "price": 12.95 },
-            { "name": "German Omelette", "price": 12.95 },
-            { "name": "Southern Omelette", "price": 12.95 },
-            { "name": "Vegetarian Omelette", "price": 12.95 },
-            { "name": "Greek Omelette", "price": 12.95 }
+            { "name": "Sausage & Cheese Omelette", "price": 10.25, "description": "Juicy sausage crumbles and gooey cheese wrapped in a fluffy, golden omelette." },
+            { "name": "Feta Cheese Omelette", "price": 10.75, "description": "Tangy, crumbly feta adds a Mediterranean touch to this light and fluffy omelette." },
+            { "name": "Mushroom Omelette", "price": 10.75, "description": "Sautéed mushrooms and Swiss cheese come together in a perfectly golden omelette." },
+            { "name": "Johnny Omelette", "price": 12.95, "description": "Our signature creation loaded with bacon, ham, sausage, and cheese — a true diner classic." },
+            { "name": "German Omelette", "price": 12.95, "description": "A unique diner specialty featuring corned beef hash, onions, and melted cheese." },
+            { "name": "Southern Omelette", "price": 12.95, "description": "A hearty Southern favorite with onions, potatoes, green peppers, and cheese." },
+            { "name": "Vegetarian Omelette", "price": 12.95, "description": "A colorful, garden-fresh mix of mushrooms, tomatoes, potatoes, and cheese." },
+            { "name": "Greek Omelette", "price": 12.95, "description": "Inspired by classic Greek flavors, filled with feta, tomatoes, spinach, and olives." }
           ]
         },
         {
           "name": "Breakfast Sides",
           "items": [
-            { "name": "One Egg", "price": 2.50 },
-            { "name": "Two Eggs", "price": 4.00 },
-            { "name": "Bagel With Cream Cheese", "price": 3.75 },
-            { "name": "Grits", "price": 3.75 },
-            { "name": "Hash Browns Idaho's Finest", "price": 3.75 },
-            { "name": "Four Strips Of Bacon", "price": 4.75 },
-            { "name": "Four Links Of Sausage", "price": 4.75 },
-            { "name": "Four Slices Of Fried Ham", "price": 4.75 }
+            { "name": "One Egg", "price": 2.50, "description": "Cooked to order, just the way you like it." },
+            { "name": "Two Eggs", "price": 4.00, "description": "Cooked to order, just the way you like them." },
+            { "name": "Bagel With Cream Cheese", "price": 3.75, "description": "Toasted and chewy, served with a generous spread of cream cheese." },
+            { "name": "Grits", "price": 3.75, "description": "Creamy, buttery Southern-style grits." },
+            { "name": "Hash Browns Idaho's Finest", "price": 3.75, "description": "Crispy, golden-brown shredded potatoes made from premium Idaho potatoes." },
+            { "name": "Four Strips Of Bacon", "price": 4.75, "description": "Crispy, smoky strips of bacon — a diner classic." },
+            { "name": "Four Links Of Sausage", "price": 4.75, "description": "Juicy, savory links cooked until perfectly browned." },
+            { "name": "Four Slices Of Fried Ham", "price": 4.75, "description": "Thick-cut slices of fried ham with a rich, savory flavor." }
           ]
         }
       ]
@@ -63,33 +63,33 @@
         {
           "name": "Soups",
           "items": [
-            { "name": "Cup of Soup of The Day", "price": 4.50 },
-            { "name": "Bowl of Soup of The Day", "price": 5.75 }
+            { "name": "Cup of Soup of The Day", "price": 4.50, "description": "A smaller serving of our fresh, homemade soup. Ask your server about today's selection." },
+            { "name": "Bowl of Soup of The Day", "price": 5.75, "description": "Hearty and homemade — ask about today's fresh selection." }
           ]
         },
         {
           "name": "Salads",
           "items": [
-            { "name": "Tossed Salad", "price": 4.50 },
-            { "name": "Baby Greek Salad", "price": 7.50 },
-            { "name": "Greek Salad (Medium)", "price": 8.50 },
-            { "name": "Chicken Salad Plate", "price": 8.75 },
-            { "name": "Tuna Salad Plate", "price": 8.75 },
-            { "name": "Greek Salad (Large)", "price": 9.50 },
-            { "name": "Chef Salad", "price": 9.50 }
+            { "name": "Tossed Salad", "price": 4.50, "description": "Simple and fresh with lettuce, tomato, and cucumber." },
+            { "name": "Baby Greek Salad", "price": 7.50, "description": "A crisp bed of iceberg lettuce topped with feta, olives, tomatoes, and cucumber." },
+            { "name": "Greek Salad (Medium)", "price": 8.50, "description": "A specialty featuring Greek feta cheese, Kalamata olives, tomatoes, cucumber, and peppers." },
+            { "name": "Chicken Salad Plate", "price": 8.75, "description": "Creamy chicken salad on crisp lettuce with tomatoes and your choice of dressing." },
+            { "name": "Tuna Salad Plate", "price": 8.75, "description": "Our special white meat tuna mixed fresh and served over crisp lettuce." },
+            { "name": "Greek Salad (Large)", "price": 9.50, "description": "A larger portion of our specialty Greek salad with feta, Kalamata olives, tomatoes, cucumber, and peppers." },
+            { "name": "Chef Salad", "price": 9.50, "description": "A hearty mix of fresh lettuce, ham, turkey, cheese, tomatoes, and cucumbers." }
           ]
         },
         {
           "name": "Side Orders",
           "items": [
-            { "name": "Sliced Tomatoes", "price": 2.50 },
-            { "name": "Pita Bread", "price": 3.25 },
-            { "name": "Cole Slaw", "price": 3.50 },
-            { "name": "French Fries", "price": 3.50 },
-            { "name": "Onion Rings", "price": 6.00 },
-            { "name": "Fried Pickles", "price": 6.75 },
-            { "name": "Fried Mozzarella Cheese Sticks", "price": 7.95 },
-            { "name": "Fried Mushrooms w/ Ranch", "price": 7.95 }
+            { "name": "Sliced Tomatoes", "price": 2.50, "description": "Fresh, juicy tomato slices served crisp and cool." },
+            { "name": "Pita Bread", "price": 3.25, "description": "Soft and warm, perfect for dipping or pairing with any meal." },
+            { "name": "Cole Slaw", "price": 3.50, "description": "Freshly shredded cabbage tossed in our creamy dressing." },
+            { "name": "French Fries", "price": 3.50, "description": "Perfectly seasoned and served hot." },
+            { "name": "Onion Rings", "price": 6.00, "description": "Crispy, golden-brown, and fried to perfection." },
+            { "name": "Fried Pickles", "price": 6.75, "description": "Zesty pickle chips, breaded and fried to golden perfection." },
+            { "name": "Fried Mozzarella Cheese Sticks", "price": 7.95, "description": "Golden and crispy on the outside, perfectly melted on the inside." },
+            { "name": "Fried Mushrooms w/ Ranch", "price": 7.95, "description": "Lightly breaded and fried until golden, served with creamy ranch dipping sauce." }
           ]
         }
       ]
@@ -102,47 +102,47 @@
           "name": "Sandwiches",
           "note": "Served deluxe with fries & cole slaw, or chips add $3.50",
           "items": [
-            { "name": "Tuna Salad Sandwich", "price": 7.25 },
-            { "name": "Chicken Salad Sandwich", "price": 7.25 },
-            { "name": "Bacon, Lettuce & Tomato", "price": 7.25 },
-            { "name": "Turkey Sandwich", "price": 7.75 },
-            { "name": "Breaded Pork Sandwich", "price": 7.95 },
-            { "name": "Tuna Melt", "price": 8.25 },
-            { "name": "Club Sandwich", "price": 8.50 },
-            { "name": "Fish Sandwich", "price": 8.75 }
+            { "name": "Tuna Salad Sandwich", "price": 7.25, "description": "A diner favorite, made fresh daily with our creamy tuna salad on your choice of bread." },
+            { "name": "Chicken Salad Sandwich", "price": 7.25, "description": "A diner favorite, made fresh daily with our creamy chicken salad on your choice of bread." },
+            { "name": "Bacon, Lettuce & Tomato", "price": 7.25, "description": "Four strips of crispy bacon, fresh lettuce, and ripe tomato on toasted bread." },
+            { "name": "Turkey Sandwich", "price": 7.75, "description": "Freshly sliced, oven-roasted turkey layered on your choice of bread with all the fixings." },
+            { "name": "Breaded Pork Sandwich", "price": 7.95, "description": "Golden fried pork with lettuce, tomato, and mayo on a toasted bun." },
+            { "name": "Tuna Melt", "price": 8.25, "description": "Warm and melty with creamy tuna salad and golden melted cheese on toasted bread." },
+            { "name": "Club Sandwich", "price": 8.50, "description": "A triple-decker classic stacked high with tender turkey, bacon, lettuce, and tomato." },
+            { "name": "Fish Sandwich", "price": 8.75, "description": "Crispy breaded fish filet with tartar sauce, lettuce, and tomato on a toasted bun." }
           ]
         },
         {
           "name": "1/3 LB. Burgers",
-          "note": "Served deluxe; add $3.50 for sides. Add cheese 75\u00a2",
+          "note": "Served deluxe; add $3.50 for sides. Add cheese 75¢",
           "items": [
-            { "name": "Hamburger", "price": 8.25 },
-            { "name": "Patty Melt", "price": 9.75 },
-            { "name": "Mushroom Burger", "price": 9.75 },
-            { "name": "Bacon Burger", "price": 9.75 }
+            { "name": "Hamburger", "price": 8.25, "description": "A timeless classic: juicy beef patty grilled to order on a toasted bun." },
+            { "name": "Patty Melt", "price": 9.75, "description": "A comfort-food classic with a seasoned beef patty, grilled onions, and melted cheese on rye bread." },
+            { "name": "Mushroom Burger", "price": 9.75, "description": "Savory sautéed mushrooms piled high over a juicy beef patty on a toasted bun." },
+            { "name": "Bacon Burger", "price": 9.75, "description": "Our classic burger taken up a notch with crispy bacon and all the fixings." }
           ]
         },
         {
           "name": "1/4 LB. Burgers",
           "note": "Served deluxe; add $3.50 for sides",
           "items": [
-            { "name": "Hamburger", "price": 6.25 },
-            { "name": "Patty Melt", "price": 7.75 },
-            { "name": "Mushroom Burger", "price": 7.75 },
-            { "name": "Bacon Burger", "price": 7.75 }
+            { "name": "Hamburger", "price": 6.25, "description": "A timeless classic: juicy beef patty grilled to order on a toasted bun." },
+            { "name": "Patty Melt", "price": 7.75, "description": "A comfort-food classic with a seasoned beef patty, grilled onions, and melted cheese on rye bread." },
+            { "name": "Mushroom Burger", "price": 7.75, "description": "Savory sautéed mushrooms piled high over a juicy beef patty on a toasted bun." },
+            { "name": "Bacon Burger", "price": 7.75, "description": "Our classic burger taken up a notch with crispy bacon and all the fixings." }
           ]
         },
         {
           "name": "Pita Sandwiches",
           "items": [
-            { "name": "Grilled Cheese Pita", "price": 5.25 },
-            { "name": "Tuna or Chicken Salad Pita", "price": 7.50 },
-            { "name": "Chicken Pita", "price": 7.95 },
-            { "name": "Vegetarian Pita", "price": 7.95 },
-            { "name": "Sliced Turkey Pita", "price": 7.95 },
-            { "name": "Gyro Pita", "price": 8.75 },
-            { "name": "Chicken Gyro Pita", "price": 8.75 },
-            { "name": "Gyro & Feta Pita", "price": 9.25 }
+            { "name": "Grilled Cheese Pita", "price": 5.25, "description": "Golden grilled pita bread stuffed with gooey melted cheese." },
+            { "name": "Tuna or Chicken Salad Pita", "price": 7.50, "description": "Your choice of our fresh, creamy tuna salad or chicken salad wrapped in a warm pita." },
+            { "name": "Chicken Pita", "price": 7.95, "description": "Grilled or crispy chicken in a warm pita with fresh lettuce, tomato, and sauce." },
+            { "name": "Vegetarian Pita", "price": 7.95, "description": "A fresh favorite featuring feta cheese, lettuce, tomatoes, cucumber, and olives in a warm pita." },
+            { "name": "Sliced Turkey Pita", "price": 7.95, "description": "Oven-roasted turkey breast layered with crisp lettuce, juicy tomatoes, and creamy sauce in a warm pita." },
+            { "name": "Gyro Pita", "price": 8.75, "description": "Tender slices of seasoned gyro meat wrapped in a warm pita with lettuce, tomato, and tzatziki." },
+            { "name": "Chicken Gyro Pita", "price": 8.75, "description": "Juicy strips of marinated chicken with lettuce, tomatoes, onions, and tzatziki in a warm pita." },
+            { "name": "Gyro & Feta Pita", "price": 9.25, "description": "Everything you love about a classic gyro, plus the bold, tangy flavor of crumbled feta cheese." }
           ]
         }
       ]
@@ -155,21 +155,21 @@
         {
           "name": "Entrees",
           "items": [
-            { "name": "Meatloaf", "price": 13.99 },
-            { "name": "Ground Round Steak", "price": 13.99 },
-            { "name": "Chicken Strips", "price": 13.99 },
-            { "name": "Country Fried Steak", "price": 13.99 },
-            { "name": "Breaded Pork", "price": 13.99 },
-            { "name": "Liver & Onions", "price": 13.99 },
-            { "name": "Breaded Veal", "price": 13.99 },
-            { "name": "Hot Turkey Sandwich", "price": 13.99 }
+            { "name": "Meatloaf", "price": 13.99, "description": "A homestyle favorite served with mashed potatoes and vegetables." },
+            { "name": "Ground Round Steak", "price": 13.99, "description": "Broiled and topped with grilled onions, served with mashed potatoes and vegetables." },
+            { "name": "Chicken Strips", "price": 13.99, "description": "Golden fried chicken strips served with fries." },
+            { "name": "Country Fried Steak", "price": 13.99, "description": "Served with brown or sausage gravy, mashed potatoes, and vegetables." },
+            { "name": "Breaded Pork", "price": 13.99, "description": "Crispy breaded cutlet served with mashed potatoes and vegetables." },
+            { "name": "Liver & Onions", "price": 13.99, "description": "Baby beef liver with grilled onions, mashed potatoes, and vegetables." },
+            { "name": "Breaded Veal", "price": 13.99, "description": "Golden fried and served with mashed potatoes and vegetables." },
+            { "name": "Hot Turkey Sandwich", "price": 13.99, "description": "Sliced turkey served open-faced with mashed potatoes and vegetables." }
           ]
         },
         {
           "name": "Seafood",
           "items": [
-            { "name": "Fish & Chips", "price": 14.75 },
-            { "name": "Shrimp & Chips", "price": 14.75 }
+            { "name": "Fish & Chips", "price": 14.75, "description": "Our own recipe of tender, flaky fish fillets, golden fried and served with chips." },
+            { "name": "Shrimp & Chips", "price": 14.75, "description": "Plump, breaded shrimp fried to golden perfection and served with chips." }
           ]
         }
       ]
@@ -182,10 +182,10 @@
         {
           "name": "Kids Favorites",
           "items": [
-            { "name": "Grilled Cheese", "price": 4.95 },
-            { "name": "1/4 Lb. Hamburger Patty", "price": 6.25 },
-            { "name": "Two Golden Brown Pancakes", "price": 7.75 },
-            { "name": "Chicken Strips", "price": 13.99 }
+            { "name": "Grilled Cheese", "price": 4.95, "description": "A gooey, melty grilled cheese sandwich on toasted bread — a kid favorite." },
+            { "name": "1/4 Lb. Hamburger Patty", "price": 6.25, "description": "A juicy quarter-pound burger patty served plain so the kids can top it their way." },
+            { "name": "Two Golden Brown Pancakes", "price": 7.75, "description": "A short stack of fluffy, golden brown pancakes — perfectly sized for little ones." },
+            { "name": "Chicken Strips", "price": 13.99, "description": "Two crispy, golden fried chicken tenders served with fries." }
           ]
         }
       ]
@@ -197,14 +197,14 @@
         {
           "name": "Drinks",
           "items": [
-            { "name": "Milk (Small)", "price": 2.95 },
-            { "name": "Small Juice", "price": 2.95 },
-            { "name": "Soft Drinks", "price": 2.99 },
-            { "name": "Hot Chocolate", "price": 2.99 },
-            { "name": "Tea", "price": 2.99 },
-            { "name": "Decaffeinated Coffee", "price": 2.99 },
-            { "name": "Milk (Large)", "price": 3.50 },
-            { "name": "Large Juice", "price": 3.50 }
+            { "name": "Milk (Small)", "price": 2.95, "description": "Cold, creamy, and refreshing." },
+            { "name": "Small Juice", "price": 2.95, "description": "Apple juice — sweet, crisp, and refreshing." },
+            { "name": "Soft Drinks", "price": 2.99, "description": "Crisp and fizzy — choose from our selection of fountain drinks." },
+            { "name": "Hot Chocolate", "price": 2.99, "description": "Rich, creamy hot chocolate — a warm and cozy treat." },
+            { "name": "Tea", "price": 2.99, "description": "Refreshing and versatile — served hot or iced." },
+            { "name": "Decaffeinated Coffee", "price": 2.99, "description": "All the rich flavor of our house blend, without the caffeine." },
+            { "name": "Milk (Large)", "price": 3.50, "description": "Cold, creamy, and refreshing — a larger pour." },
+            { "name": "Large Juice", "price": 3.50, "description": "Apple juice — sweet, crisp, and refreshing in a larger size." }
           ]
         }
       ]
