@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Page Not Found — Johnny's Diner" description="Oops! This page doesn't exist. Head back to Johnny's Diner.">
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h1 class="font-display text-4xl md:text-5xl mb-2 hero-animate hero-animate-1">Uh oh!</h1>
+      <p class="text-lg font-light hero-animate hero-animate-2">Looks like this plate got cleared</p>
+    </div>
+  </section>
+
+  <section class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <div class="font-display text-diner-red text-8xl md:text-9xl mb-4 leading-none">404</div>
+    <h2 class="font-display text-diner-dark text-3xl mb-4">Page Not Found</h2>
+    <p class="text-diner-gray text-lg leading-relaxed mb-10">
+      We couldn't find what you were looking for — but we can still fix that with a hot cup of coffee and some fresh pancakes.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="inline-flex items-center justify-center gap-2 bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        Back to Home
+      </a>
+      <a href="/menu" class="inline-flex items-center justify-center gap-2 bg-white text-diner-red border-2 border-diner-red font-semibold px-8 py-3 rounded-full hover:bg-diner-red-light transition-colors">
+        View the Menu
+      </a>
+    </div>
+  </section>
+</Layout>
