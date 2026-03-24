@@ -165,7 +165,7 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
         });
       }, { threshold: 0.1 });
 
-      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+      document.querySelectorAll('.reveal, .slide-left, .slide-right').forEach((el) => observer.observe(el));
 
       // Carousel — infinite loop
       const carousel = document.getElementById('carousel');
