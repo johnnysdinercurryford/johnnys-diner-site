@@ -8,7 +8,18 @@ import Layout from '../layouts/Layout.astro';
     <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24 flex justify-center">
       <div class="bg-white rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-xl hero-animate hero-animate-1" style="box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 40px;">
-        <img src="/logo.png" alt="Johnny's Diner" class="h-72 md:h-96 w-auto mx-auto mb-4" />
+        <div class="relative inline-block mx-auto mb-4">
+          <img src="/logo.png" alt="Johnny's Diner" class="h-72 md:h-96 w-auto" />
+          <div class="absolute -bottom-4 -right-2 text-center">
+            <div class="relative">
+              <span class="block font-black text-[#F5C800] text-5xl md:text-6xl leading-none" style="text-shadow: 2px 2px 0 #cc0000, -1px -1px 0 #cc0000, 1px -1px 0 #cc0000, -1px 1px 0 #cc0000;">30</span>
+              <div class="relative bg-[#F5C800] px-4 py-0.5 -mt-1" style="clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);">
+                <span class="font-black text-diner-red text-sm tracking-widest uppercase">Years</span>
+              </div>
+              <span class="block font-display text-diner-red text-base mt-0.5">In Business!</span>
+            </div>
+          </div>
+        </div>
         <p class="text-diner-gray text-lg mb-8">Family owned & operated &mdash; Homestyle cooking since '95</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/menu" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95">
