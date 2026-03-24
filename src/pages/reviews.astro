@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Reviews — Johnny's Diner" description="See what guests are saying about Johnny's Diner on Curry Ford Road, Orlando FL.">
+  <!-- Header -->
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-center text-white">
+      <h1 class="font-display text-4xl md:text-5xl mb-2 hero-animate hero-animate-1">Guest Reviews</h1>
+      <p class="text-lg font-light hero-animate hero-animate-2">Hear it straight from our community</p>
+    </div>
+  </section>
+
+  <!-- Google Reviews Widget -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-f3fee7f4-01da-43c4-9ad0-4e6302e1036a" data-elfsight-app-lazy></div>
+  </section>
+</Layout>
