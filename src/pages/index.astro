@@ -86,7 +86,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- Pull Quotes -->
   <section class="bg-white py-14 md:py-20">
     <div class="max-w-5xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-3 gap-6 items-center">
         <div class="menu-card p-8 reveal">
           <div class="flex gap-1 mb-4">
             {[1,2,3,4,5].map(() => (
@@ -95,6 +95,10 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <p class="text-diner-gray leading-relaxed italic mb-4">"Best breakfast spot in Orlando, hands down. The pancakes are fluffy, the coffee is always hot, and the staff treats you like family. Been coming here for 10 years and it never gets old."</p>
           <p class="text-diner-dark font-semibold text-sm">— Maria T. &nbsp;<span class="text-diner-gray font-normal">Google Review</span></p>
+        </div>
+        <!-- Mug -->
+        <div class="flex justify-center reveal">
+          <img src="/mug.png" alt="Johnny's Diner Curry Ford mug" class="w-56 md:w-64 h-auto drop-shadow-xl" />
         </div>
         <div class="menu-card p-8 reveal">
           <div class="flex gap-1 mb-4">
