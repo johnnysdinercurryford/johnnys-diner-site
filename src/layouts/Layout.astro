@@ -169,13 +169,27 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
       const navBadge = document.getElementById('nav-hours-badge');
       if (navBadge) {
         const now = new Date();
-        const day = now.getDay();
+        const day = now.getDay(); // 0=Sun, 1=Mon...6=Sat
         const hour = now.getHours() + now.getMinutes() / 60;
-        const openHour = day === 0 ? 7 : 6;
+        const openHour = day === 0 ? 7 : 6; // Sun opens at 7am, all others 6am
         const isOpen = hour >= openHour && hour < 15;
-        navBadge.innerHTML = isOpen
-          ? '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-green-50 border border-green-200 text-green-700"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Open Now</span>'
-          : '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-red-50 border border-red-200 text-red-600"><span class="w-2 h-2 rounded-full bg-red-400"></span>Closed</span>';
+
+        if (isOpen) {
+          navBadge.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-green-50 border border-green-200 text-green-700"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Open until 3pm</span>';
+        } else {
+          // Determine next opening time
+          let nextOpenLabel;
+          if (hour < openHour) {
+            // Closed before today's opening (e.g. early morning)
+            nextOpenLabel = 'today at ' + (openHour === 7 ? '7am' : '6am');
+          } else {
+            // Past 3pm — opens tomorrow
+            const tomorrowDay = (day + 1) % 7;
+            const tomorrowOpen = tomorrowDay === 0 ? '7am' : '6am';
+            nextOpenLabel = 'tomorrow at ' + tomorrowOpen;
+          }
+          navBadge.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-red-50 border border-red-200 text-red-600"><span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>Closed \u00b7 Opens ' + nextOpenLabel + '</span>';
+        }
       }
 
       // Scroll reveal
