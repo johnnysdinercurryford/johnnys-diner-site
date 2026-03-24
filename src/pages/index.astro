@@ -14,8 +14,6 @@ import Layout from '../layouts/Layout.astro';
           <div class="w-px h-4 bg-white/30"></div>
           <span class="font-bold text-white text-xs uppercase tracking-widest">Years In Business</span>
         </div>
-        <!-- Open/Closed indicator -->
-        <div id="hours-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold mb-4"></div>
         <img src="/logo.png" alt="Johnny's Diner" class="h-72 md:h-96 w-auto mx-auto mb-4" />
         <p class="text-diner-gray text-lg mb-8">Family owned & operated &mdash; Homestyle cooking since '95</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -311,20 +309,4 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-<script>
-  const badge = document.getElementById('hours-badge');
-  if (badge) {
-    const now = new Date();
-    const day = now.getDay(); // 0=Sun
-    const hour = now.getHours() + now.getMinutes() / 60;
-    const openHour = day === 0 ? 7 : 6;
-    const isOpen = hour >= openHour && hour < 15;
-    badge.innerHTML = isOpen
-      ? '<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span><span class="text-green-700">Open Now</span>'
-      : '<span class="w-2 h-2 rounded-full bg-red-400"></span><span class="text-red-600">Closed</span>';
-    badge.className = isOpen
-      ? 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold mb-4 bg-green-50 border border-green-200'
-      : 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold mb-4 bg-red-50 border border-red-200';
-  }
-</script>
 </Layout>
