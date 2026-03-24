@@ -47,16 +47,17 @@ const categories = menuData.categories;
         <!-- Subcategories -->
         {cat.subcategories.map((sub) => (
           <div class="mb-6 bg-white rounded-2xl border border-diner-border shadow-sm overflow-hidden">
-            <div class="bg-diner-red px-6 py-4 text-center">
-              <h3 class="text-white font-semibold text-lg">{sub.name}</h3>
-              {sub.note && <p class="text-white/70 text-sm italic mt-1">{sub.note}</p>}
+            <div class="bg-diner-red relative overflow-hidden px-6 py-4 text-center">
+              <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+              <h3 class="relative text-white font-display text-xl">{sub.name}</h3>
+              {sub.note && <p class="relative text-white/70 text-sm italic mt-1">{sub.note}</p>}
             </div>
             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {sub.items.map((item) => (
-                <div class="menu-card p-5">
-                  <div class="flex justify-between items-start gap-2 mb-2">
+                <div class="bg-white rounded-xl border border-diner-border border-l-4 border-l-diner-red shadow-sm hover:shadow-md transition-shadow p-5">
+                  <div class="flex justify-between items-start gap-3 mb-2">
                     <h4 class="font-semibold text-diner-dark leading-snug">{item.name}</h4>
-                    <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>
+                    <span class="shrink-0 bg-diner-red text-white text-xs font-bold px-2.5 py-1 rounded-full">${item.price.toFixed(2)}</span>
                   </div>
                   {item.description && <p class="text-sm text-diner-gray leading-relaxed">{item.description}</p>}
                 </div>
