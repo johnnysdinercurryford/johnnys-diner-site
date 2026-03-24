@@ -106,13 +106,14 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
         <ul class="flex flex-col px-4 py-3 gap-2 text-sm font-bold">
           <li><a href="/" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Home</a></li>
           <li>
-            <button class="mobile-submenu-btn w-full flex items-center justify-between px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200" data-target="mobile-menu-submenu">
-              <span>Menu</span>
-              <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
+            <div class="flex items-center rounded-full border border-diner-border bg-white shadow-sm overflow-hidden">
+              <a href="/menu" class="flex-1 px-4 py-2 font-bold hover:bg-diner-red hover:text-white transition-all duration-200">Menu</a>
+              <button class="mobile-submenu-btn px-3 py-2 border-l border-diner-border hover:bg-diner-red hover:text-white transition-all duration-200" data-target="mobile-menu-submenu">
+                <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+            </div>
             <ul id="mobile-menu-submenu" class="hidden mt-1 flex flex-col gap-1">
-              <li><a href="/menu#breakfast" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Breakfast</a></li>
-              <li><a href="/menu#small-plates" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Small Plates &amp; Appetizers</a></li>
+              <li><a href="/menu#small-plates" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Plates &amp; Appetizers</a></li>
               <li><a href="/menu#handhelds" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Handhelds</a></li>
               <li><a href="/menu#dinners" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Dinners</a></li>
               <li><a href="/menu#kids" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Kids Menu</a></li>
@@ -120,10 +121,12 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
             </ul>
           </li>
           <li>
-            <button class="mobile-submenu-btn w-full flex items-center justify-between px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200" data-target="mobile-about-submenu">
-              <span>About Us</span>
-              <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
+            <div class="flex items-center rounded-full border border-diner-border bg-white shadow-sm overflow-hidden">
+              <a href="/about" class="flex-1 px-4 py-2 font-bold hover:bg-diner-red hover:text-white transition-all duration-200">About Us</a>
+              <button class="mobile-submenu-btn px-3 py-2 border-l border-diner-border hover:bg-diner-red hover:text-white transition-all duration-200" data-target="mobile-about-submenu">
+                <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+            </div>
             <ul id="mobile-about-submenu" class="hidden mt-1 flex flex-col gap-1">
               <li><a href="/about#story" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Our Story</a></li>
               <li><a href="/about#awards" class="block px-4 py-1.5 rounded-full text-sm text-center text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Awards &amp; Recognition</a></li>
