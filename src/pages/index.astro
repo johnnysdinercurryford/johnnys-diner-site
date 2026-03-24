@@ -4,27 +4,29 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Johnny's Diner — Best Breakfast in Orlando Since 1995">
   <!-- Hero -->
-  <section class="relative min-h-[80vh] md:min-h-[88vh] flex items-center overflow-hidden">
+  <section class="relative min-h-[92vh] flex items-center overflow-hidden">
     <img
       src="/diner-exterior.jpg"
       alt="Johnny's Diner — 3335 Curry Ford Rd, Orlando"
-      class="absolute inset-0 w-full h-full object-cover object-center"
+      class="absolute inset-0 w-full h-full object-cover object-center hero-zoom"
     />
-    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/5"></div>
+    <!-- Years badge — top right -->
+    <div class="hero-slide-right absolute top-6 right-6 hidden md:flex flex-col items-center justify-center z-10">
+      <div class="bg-black/60 border border-white/20 backdrop-blur-sm rounded-2xl px-6 py-5 text-center">
+        <span class="font-black text-[#F5C800] text-5xl leading-none block">31</span>
+        <div class="w-8 h-px bg-white/30 mx-auto my-2"></div>
+        <span class="font-bold text-white text-xs uppercase tracking-widest block">Years In Business</span>
+      </div>
+    </div>
     <div class="relative max-w-6xl mx-auto px-6 py-14 md:py-32 w-full">
       <div class="max-w-xl flex flex-col items-center text-center md:items-start md:text-left">
-        <!-- Badge -->
-        <div class="hero-animate hero-animate-1 inline-flex items-center gap-2 bg-black/60 border border-white/20 px-5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
-          <span class="font-black text-[#F5C800] text-xl leading-none">31</span>
-          <div class="w-px h-4 bg-white/30"></div>
-          <span class="font-bold text-white text-xs uppercase tracking-widest">Years In Business</span>
+        <div class="hero-animate hero-animate-2 inline-block bg-white stripe-bg-light rounded-2xl px-5 py-3 mb-5 shadow-xl">
+          <img src="/logo.png" alt="Johnny's Diner" class="w-48 md:w-72 h-auto" />
         </div>
-        <div class="hero-animate hero-animate-2 flex items-center justify-center rounded-full w-36 h-36 md:w-64 md:h-64 mb-4 shadow-xl p-3 md:p-4" style="background: radial-gradient(circle, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.05) 100%); backdrop-filter: blur(4px);">
-          <img src="/logo.png" alt="Johnny's Diner" class="w-full h-auto" />
-        </div>
-        <p class="hero-animate hero-animate-3 font-bold text-diner-red text-xl md:text-3xl mb-2 tracking-wide uppercase">Breakfast, Lunch &amp; Dinner</p>
-        <p class="hero-animate hero-animate-3 text-white/80 text-base md:text-lg font-medium mb-2">Curry Ford Road &mdash; Orlando, FL</p>
-        <p class="hero-animate hero-animate-3 text-white/90 font-semibold text-lg md:text-2xl mb-6 leading-snug">Family Owned &amp; Operated<br/>Homestyle Cooking Since 1995</p>
+        <p class="hero-animate hero-animate-3 hero-text-red font-bold text-diner-red text-3xl md:text-5xl mb-2 tracking-widest uppercase">Breakfast, Lunch &amp; Dinner</p>
+        <p class="hero-animate hero-animate-3 hero-text-white text-white font-bold text-xl md:text-3xl mb-2 tracking-wide">Curry Ford Road &mdash; Orlando, FL</p>
+        <p class="hero-animate hero-animate-3 hero-text-white text-white/90 font-bold text-2xl md:text-4xl mb-6 leading-snug tracking-wide">Family Owned &amp; Operated<br/>Homestyle Cooking Since 1995</p>
         <div class="hero-animate hero-animate-4 flex flex-col sm:flex-row gap-3 mb-8">
           <a href="/menu" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95 shadow-md text-center">
             View Our Menu
