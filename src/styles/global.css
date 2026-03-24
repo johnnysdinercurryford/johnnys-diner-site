@@ -24,17 +24,17 @@ html {
 /* Animated diagonal stripe for hero sections */
 @keyframes stripe-slide {
   from { background-position: 0 0; }
-  to { background-position: 40px 40px; }
+  to { background-position: 28.28px 28.28px; }
 }
 
 .stripe-bg {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);
-  animation: stripe-slide 12s linear infinite;
+  animation: stripe-slide 3s linear infinite;
 }
 
 .stripe-bg-light {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(245,3,1,0.07) 10px, rgba(245,3,1,0.07) 20px);
-  animation: stripe-slide 12s linear infinite;
+  animation: stripe-slide 3s linear infinite;
 }
 
 /* Hero text fade-up animation */
@@ -69,6 +69,26 @@ html {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Slide in from left */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Slide in from right */
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-left.visible,
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Card hover lift */
