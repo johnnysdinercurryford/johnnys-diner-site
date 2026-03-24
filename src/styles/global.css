@@ -72,6 +72,13 @@ html {
 .hero-animate-4 { animation-delay: 1.2s; }
 .hero-animate-5 { animation-delay: 1.2s; }
 
+/* Black text with white outline */
+.text-outlined {
+  color: #111111;
+  -webkit-text-stroke: 2px white;
+  paint-order: stroke fill;
+}
+
 /* Logo card flip on hover */
 .logo-card {
   transition: transform 0.5s ease;
