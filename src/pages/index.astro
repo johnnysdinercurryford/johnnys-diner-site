@@ -35,17 +35,25 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Awards -->
-  <section class="bg-diner-cream relative overflow-hidden py-16 md:py-24">
-    <div class="absolute inset-0 stripe-bg-light"></div>
+  <section class="bg-diner-red relative overflow-hidden py-16 md:py-24">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4">
-      <h2 class="font-display text-diner-red text-3xl md:text-4xl text-center mb-2 reveal">Awards & Recognition</h2>
-      <p class="text-center text-diner-gray mb-12 reveal">Orlando Sentinel Foodie Awards &mdash; Readers Choice 2026</p>
+      <h2 class="font-display text-white text-3xl md:text-4xl text-center mb-2 reveal">Awards & Recognition</h2>
+      <p class="text-center text-white/70 mb-12 reveal">Orlando Sentinel Foodie Awards &mdash; Readers Choice 2026</p>
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-        <div class="menu-card overflow-hidden reveal">
-          <img src="/award-best-diner.jpg" alt="Orlando Sentinel Foodie Awards — Readers Choice Best Diner 2026" class="w-full h-auto" />
+        <div class="reveal text-center">
+          <div class="menu-card overflow-hidden mb-4">
+            <img src="/award-best-diner.jpg" alt="Orlando Sentinel Foodie Awards — Readers Choice Best Diner 2026" class="w-full h-auto" />
+          </div>
+          <p class="text-white font-semibold">Readers Choice &mdash; Best Diner</p>
+          <p class="text-white/70 text-sm mt-1">Orlando Sentinel Foodie Awards 2026</p>
         </div>
-        <div class="menu-card overflow-hidden reveal">
-          <img src="/award-best-breakfast.jpg" alt="Orlando Sentinel Foodie Awards — Readers Choice Best Breakfast 2026" class="w-full h-auto" />
+        <div class="reveal text-center">
+          <div class="menu-card overflow-hidden mb-4">
+            <img src="/award-best-breakfast.jpg" alt="Orlando Sentinel Foodie Awards — Readers Choice Best Breakfast 2026" class="w-full h-auto" />
+          </div>
+          <p class="text-white font-semibold">Readers Choice &mdash; Best Breakfast</p>
+          <p class="text-white/70 text-sm mt-1">Orlando Sentinel Foodie Awards 2026</p>
         </div>
       </div>
     </div>
