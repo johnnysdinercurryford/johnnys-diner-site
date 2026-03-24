@@ -16,6 +16,7 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&display=swap" rel="stylesheet" />
@@ -61,13 +62,16 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
 
       <!-- Mobile nav -->
       <div id="mobile-menu" class="hidden md:hidden border-t border-diner-border">
-        <ul class="flex flex-col px-4 py-3 gap-3 text-sm font-medium">
-          <li><a href="/" class="block py-2 hover:text-diner-red transition-colors">Home</a></li>
-          <li><a href="/menu" class="block py-2 hover:text-diner-red transition-colors">Menu</a></li>
-          <li><a href="/about" class="block py-2 hover:text-diner-red transition-colors">About Us</a></li>
-          <li><a href="/contact" class="block py-2 hover:text-diner-red transition-colors">Contact</a></li>
-          <li><a href="/reviews" class="block py-2 hover:text-diner-red transition-colors">Reviews</a></li>
-          <li><a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" class="block py-2 text-[#FF3008] font-semibold hover:opacity-80 transition-opacity">DoorDash</a></li>
+        <ul class="flex flex-col px-4 py-3 gap-2 text-sm font-bold">
+          <li><a href="/" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Home</a></li>
+          <li><a href="/menu" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Menu</a></li>
+          <li><a href="/about" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">About Us</a></li>
+          <li><a href="/contact" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Contact</a></li>
+          <li><a href="/reviews" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Reviews</a></li>
+          <li><a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#FF3008]/40 bg-white shadow-sm text-[#FF3008] hover:bg-[#FF3008] hover:text-white hover:border-[#FF3008] transition-all duration-200">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.057 15.6H7.714V8.4h6.343c1.986 0 3.6 1.614 3.6 3.6s-1.614 3.6-3.6 3.6z"/></svg>
+            DoorDash
+          </a></li>
           <li>
             <a href="tel:+14078688267" class="flex items-center gap-2 bg-diner-red text-white font-semibold px-4 py-2.5 rounded-full w-fit hover:bg-diner-red-dark transition-colors">
               <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">

@@ -23,7 +23,8 @@ const categories = menuData.categories;
           <li>
             <a
               href={`#${cat.id}`}
-              class="px-4 py-2 rounded-full text-sm font-medium text-diner-gray hover:text-diner-red hover:bg-diner-warm transition-colors"
+              data-tab={cat.id}
+              class="menu-tab px-4 py-2 rounded-full text-sm font-medium text-diner-gray hover:text-diner-red hover:bg-diner-warm transition-colors"
             >
               {cat.name}
             </a>
@@ -66,4 +67,26 @@ const categories = menuData.categories;
       </section>
     ))}
   </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.menu-tab');
+    const sections = document.querySelectorAll('.max-w-6xl section[id]');
+
+    const setActive = (id: string) => {
+      tabs.forEach(tab => {
+        const isActive = (tab as HTMLElement).dataset.tab === id;
+        tab.classList.toggle('bg-diner-red', isActive);
+        tab.classList.toggle('text-white', isActive);
+        tab.classList.toggle('text-diner-gray', !isActive);
+      });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
 </Layout>
