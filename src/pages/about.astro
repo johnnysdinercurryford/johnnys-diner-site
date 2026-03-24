@@ -25,12 +25,17 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="pb-8">
           <h2 class="font-display text-2xl text-diner-dark mb-3">Where It All Started</h2>
-          <p class="text-diner-gray leading-relaxed">
-            Johnny's Diner opened its doors as a humble 8-booth spot on Curry Ford Road.
-            From day one, the mission was simple: serve honest, homestyle food with a smile
-            and a bottomless cup of coffee. The kind of place where regulars don't need a menu
-            and the staff knows your name.
+          <p class="text-diner-gray leading-relaxed mb-6">
+            Johnny's Diner first opened its doors in 1995, born from the dream of Giovanni (Johnny) Krasniqi.
+            With a deep passion for classic American homestyle cooking and a desire to create a welcoming space
+            for the community, he established a diner that quickly became a local favorite on Curry Ford Road
+            in Orlando. From day one, the mission was simple: serve honest food with a smile and a bottomless
+            cup of coffee.
           </p>
+          <div class="menu-card overflow-hidden">
+            <img src="/johnny-founder.jpg" alt="Johnny Krasniqi — founder of Johnny's Diner, 1995" class="w-full h-72 object-cover object-top" />
+            <p class="text-center text-sm text-diner-gray py-3">Johnny Krasniqi &mdash; Founder, 1995</p>
+          </div>
         </div>
       </div>
 
@@ -63,13 +68,17 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div>
-          <h2 class="font-display text-2xl text-diner-dark mb-3">Still Family, Still Home</h2>
-          <p class="text-diner-gray leading-relaxed">
-            Three decades later, Johnny's Diner is still family owned and operated. We partner
-            with local farms and bakeries, source quality ingredients, and cook everything fresh
-            daily. Community-first hospitality isn't a tagline &mdash; it's how we've done it
-            since the beginning.
+          <h2 class="font-display text-2xl text-diner-dark mb-3">The Curry Ford Family</h2>
+          <p class="text-diner-gray leading-relaxed mb-6">
+            Today, the Curry Ford Road location is owned and operated by Martin, Pal, and Marian &mdash;
+            three guys who share the same values Johnny built this place on. Quality ingredients, fresh
+            daily cooking, and treating every guest like family. They've kept the heart of the diner alive
+            while bringing their own energy to the community they love.
           </p>
+          <div class="menu-card overflow-hidden">
+            <img src="/owners-trio.jpg" alt="Martin, Pal, and Marian — owners of Johnny's Diner Curry Ford" class="w-full h-80 object-cover object-top" />
+            <p class="text-center text-sm text-diner-gray py-3">Martin, Pal & Marian &mdash; Owners, Curry Ford Location</p>
+          </div>
         </div>
       </div>
     </div>
@@ -133,7 +142,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- Values -->
   <section class="max-w-3xl mx-auto px-4 py-16">
     <h2 class="font-display text-diner-red text-3xl text-center mb-10">What We Stand For</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 gap-6">
       <div class="menu-card p-6 text-center">
         <h3 class="font-semibold text-diner-dark mb-2">Fresh Daily</h3>
         <p class="text-sm text-diner-gray">Quality, locally sourced ingredients prepared from scratch every morning.</p>
@@ -145,6 +154,10 @@ import Layout from '../layouts/Layout.astro';
       <div class="menu-card p-6 text-center">
         <h3 class="font-semibold text-diner-dark mb-2">Always Family</h3>
         <p class="text-sm text-diner-gray">You're family the moment you walk in. That's been true since 1995.</p>
+      </div>
+      <div class="menu-card p-6 text-center">
+        <h3 class="font-semibold text-diner-dark mb-2">Supporting Our Schools</h3>
+        <p class="text-sm text-diner-gray">We partner with nearby schools for "Diner Nights," where a portion of our proceeds goes directly to supporting educational programs and events.</p>
       </div>
     </div>
   </section>
