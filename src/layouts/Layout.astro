@@ -29,6 +29,17 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
           <img src="/logo.png" alt="Johnny's Diner" class="h-14 md:h-20 w-auto" />
         </a>
 
+        <!-- Mobile phone + badge (always visible) -->
+        <div class="flex md:hidden flex-col items-end gap-1 mr-2">
+          <a href="tel:+14078688267" class="flex items-center gap-1.5 bg-diner-red text-white font-semibold px-3 py-1.5 rounded-full text-xs">
+            <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            (407) 868-8267
+          </a>
+          <div id="mobile-header-badge"></div>
+        </div>
+
         <!-- Mobile menu button -->
         <button
           id="mobile-menu-btn"
@@ -166,31 +177,32 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
       });
 
       // Open/Closed badge
-      const navBadge = document.getElementById('nav-hours-badge');
-      if (navBadge) {
-        const now = new Date();
-        const day = now.getDay(); // 0=Sun, 1=Mon...6=Sat
-        const hour = now.getHours() + now.getMinutes() / 60;
-        const openHour = day === 0 ? 7 : 6; // Sun opens at 7am, all others 6am
-        const isOpen = hour >= openHour && hour < 15;
+      const now = new Date();
+      const day = now.getDay(); // 0=Sun, 1=Mon...6=Sat
+      const hour = now.getHours() + now.getMinutes() / 60;
+      const openHour = day === 0 ? 7 : 6; // Sun opens at 7am, all others 6am
+      const isOpen = hour >= openHour && hour < 15;
 
-        if (isOpen) {
-          navBadge.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-green-600 text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>Open until 3pm</span>';
+      let badgeHTML;
+      if (isOpen) {
+        badgeHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-green-600 text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>Open until 3pm</span>';
+      } else {
+        let nextOpenLabel;
+        if (hour < openHour) {
+          nextOpenLabel = 'today at ' + (openHour === 7 ? '7am' : '6am');
         } else {
-          // Determine next opening time
-          let nextOpenLabel;
-          if (hour < openHour) {
-            // Closed before today's opening (e.g. early morning)
-            nextOpenLabel = 'today at ' + (openHour === 7 ? '7am' : '6am');
-          } else {
-            // Past 3pm — opens tomorrow
-            const tomorrowDay = (day + 1) % 7;
-            const tomorrowOpen = tomorrowDay === 0 ? '7am' : '6am';
-            nextOpenLabel = 'tomorrow at ' + tomorrowOpen;
-          }
-          navBadge.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-diner-dark text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>Closed \u00b7 Opens ' + nextOpenLabel + '</span>';
+          const tomorrowDay = (day + 1) % 7;
+          const tomorrowOpen = tomorrowDay === 0 ? '7am' : '6am';
+          nextOpenLabel = 'tomorrow at ' + tomorrowOpen;
         }
+        badgeHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-diner-dark text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>Closed \u00b7 Opens ' + nextOpenLabel + '</span>';
       }
+
+      const navBadge = document.getElementById('nav-hours-badge');
+      if (navBadge) navBadge.innerHTML = badgeHTML;
+
+      const mobileHeaderBadge = document.getElementById('mobile-header-badge');
+      if (mobileHeaderBadge) mobileHeaderBadge.innerHTML = badgeHTML;
 
       // Scroll reveal
       const observer = new IntersectionObserver((entries) => {
