@@ -7,7 +7,7 @@
       "subcategories": [
         {
           "name": "Breakfast Specials",
-          "note": "Served Mon–Sat 6am–11am, Sun 7am–3pm",
+          "note": "Available all day · Special pricing applies Mon–Sat 6–11am and Sun 7am–3pm",
           "items": [
             { "name": "Two Blueberry Pancakes, Two Eggs, Two Bacon Strips", "price": 8.75, "description": "A hearty morning special: two fluffy blueberry pancakes, two eggs cooked to order, and two strips of crispy bacon." },
             { "name": "Corned Beef Hash, Two Eggs, and Toast", "price": 9.75, "description": "Savory corned beef hash with two eggs cooked to order, served with your choice of toast." },
