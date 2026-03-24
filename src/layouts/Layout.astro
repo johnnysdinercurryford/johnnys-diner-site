@@ -200,18 +200,23 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
 
         const scrollAmt = () => (carousel.querySelector('div')?.offsetWidth || 300) + 16;
 
-        prevBtn?.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmt(), behavior: 'smooth' }));
-        nextBtn?.addEventListener('click', () => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }));
-
-        // Reset to start when reaching the cloned section
-        carousel.addEventListener('scroll', () => {
+        prevBtn?.addEventListener('click', () => {
           const half = carousel.scrollWidth / 2;
-          if (carousel.scrollLeft >= half) carousel.scrollLeft -= half;
-          if (carousel.scrollLeft <= 0) carousel.scrollLeft += half;
+          if (carousel.scrollLeft - scrollAmt() <= 0) carousel.scrollLeft += half;
+          carousel.scrollBy({ left: -scrollAmt(), behavior: 'smooth' });
+        });
+        nextBtn?.addEventListener('click', () => {
+          const half = carousel.scrollWidth / 2;
+          if (carousel.scrollLeft + scrollAmt() >= half) carousel.scrollLeft -= half;
+          carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' });
         });
 
-        // Auto-scroll
-        setInterval(() => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }), 3000);
+        // Auto-scroll: silently reset position before scrolling, never use scroll event
+        setInterval(() => {
+          const half = carousel.scrollWidth / 2;
+          if (carousel.scrollLeft >= half) carousel.scrollLeft -= half;
+          carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' });
+        }, 3000);
       }
     </script>
   </body>
