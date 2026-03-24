@@ -15,12 +15,12 @@ const allCategories = menuData.categories;
 
 <Layout title={`${category.name} — Johnny's Diner`}>
   <!-- Hero -->
-  <section class="bg-diner-cream relative overflow-hidden">
-    <div class="absolute inset-0 opacity-5 stripe-bg"></div>
-    <div class="relative max-w-6xl mx-auto px-4 py-12 text-center">
-      <a href="/menu" class="text-sm uppercase tracking-widest font-medium text-diner-red/70 hover:text-diner-red transition-colors hero-animate hero-animate-1">← Full Menu</a>
-      <h1 class="font-display text-4xl md:text-5xl mt-2 text-diner-red hero-animate hero-animate-2">{category.name}</h1>
-      {category.note && <p class="mt-2 text-lg font-light text-diner-gray hero-animate hero-animate-3">{category.note}</p>}
+  <section class="bg-diner-red relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-12 text-center text-white">
+      <a href="/menu" class="text-sm uppercase tracking-widest font-medium opacity-80 hover:opacity-100 transition-opacity hero-animate hero-animate-1">← Full Menu</a>
+      <h1 class="font-display text-4xl md:text-5xl mt-2 hero-animate hero-animate-2">{category.name}</h1>
+      {category.note && <p class="mt-2 text-lg font-light opacity-90 hero-animate hero-animate-3">{category.note}</p>}
     </div>
   </section>
 
