@@ -164,6 +164,16 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
       }, { threshold: 0.1 });
 
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      // Carousel
+      const carousel = document.getElementById('carousel');
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      if (carousel && prevBtn && nextBtn) {
+        const scrollAmt = () => carousel.querySelector('div')?.offsetWidth + 16 || 320;
+        prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmt(), behavior: 'smooth' }));
+        nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }));
+      }
     </script>
   </body>
 </html>

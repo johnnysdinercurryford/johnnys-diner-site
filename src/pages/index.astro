@@ -8,12 +8,12 @@ import Layout from '../layouts/Layout.astro';
     <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-10 pb-16 md:pt-14 md:pb-24 flex flex-col items-center gap-8">
       <!-- 30 Years Banner -->
-      <div class="flex items-center gap-5 bg-white/15 backdrop-blur-sm border-2 border-white/40 px-10 py-4 rounded-full hero-animate hero-animate-1 shadow-lg">
-        <span class="font-black text-white text-6xl md:text-7xl leading-none" style="text-shadow: 2px 2px 0 rgba(0,0,0,0.2);">30</span>
-        <div class="w-px h-12 bg-white/40"></div>
+      <div class="flex items-center gap-5 bg-diner-dark border-2 border-white/20 px-10 py-4 rounded-full hero-animate hero-animate-1 shadow-xl">
+        <span class="font-black text-[#F5C800] text-6xl md:text-7xl leading-none" style="text-shadow: 2px 2px 0 rgba(0,0,0,0.4);">31</span>
+        <div class="w-px h-12 bg-white/30"></div>
         <div>
           <p class="font-black text-white text-lg md:text-xl uppercase tracking-widest leading-tight">Years</p>
-          <p class="font-display text-white/90 text-xl md:text-2xl leading-tight">In Business!</p>
+          <p class="font-display text-white/80 text-xl md:text-2xl leading-tight">In Business!</p>
         </div>
       </div>
       <div class="bg-white rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-xl hero-animate hero-animate-2" style="box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 40px;">
@@ -64,6 +64,50 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-white font-semibold">Readers Choice &mdash; Best Breakfast</p>
           <p class="text-white/70 text-sm mt-1">Orlando Sentinel Foodie Awards 2026</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Carousel -->
+  <section class="bg-diner-dark py-16 md:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+    <div class="relative max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-white text-3xl md:text-4xl text-center mb-10 reveal">Life at Johnny's</h2>
+      <div class="relative">
+        <div id="carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4" style="scrollbar-width: none;">
+          {[
+            '/photos/IMG_1787.jpg',
+            '/photos/IMG_1788.jpg',
+            '/photos/IMG_1836.jpg',
+            '/photos/IMG_1841_cleaned.jpg',
+            '/photos/IMG_1851_cleaned.jpg',
+            '/photos/IMG_1863.jpg',
+            '/photos/IMG_1864.jpg',
+            '/photos/IMG_1867.jpg',
+            '/photos/IMG_1877.jpg',
+            '/photos/IMG_1882.jpg',
+            '/photos/IMG_1903.jpg',
+            '/photos/IMG_1905.jpg',
+            '/photos/IMG_1920.jpg',
+            '/photos/IMG_1921.jpg',
+            '/photos/IMG_1925.jpg',
+            '/photos/IMG_1970.jpg',
+            '/photos/IMG_1976.jpg',
+            '/photos/IMG_1995_cleaned.jpg',
+            '/photos/IMG_2031.jpg',
+          ].map((src) => (
+            <div class="snap-center shrink-0 w-72 md:w-96 h-64 md:h-80 rounded-2xl overflow-hidden">
+              <img src={src} alt="Johnny's Diner" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+          ))}
+        </div>
+        <!-- Prev/Next buttons -->
+        <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 bg-white text-diner-red w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-diner-cream transition-colors z-10">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 bg-white text-diner-red w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-diner-cream transition-colors z-10">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
       </div>
     </div>
   </section>
