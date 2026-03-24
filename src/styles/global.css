@@ -85,8 +85,10 @@ html {
   transform-style: preserve-3d;
 }
 
-.logo-card:hover {
-  transform: rotateY(180deg);
+@media (hover: hover) {
+  .logo-card:hover {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Hero badge slide in from right */
