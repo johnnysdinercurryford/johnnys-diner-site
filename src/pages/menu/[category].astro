@@ -56,7 +56,7 @@ const allCategories = menuData.categories;
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sub.items.map((item) => (
-            <div class="bg-white rounded-xl p-5 shadow-sm border border-diner-border card-lift">
+            <div class="menu-card p-5">
               <div class="flex justify-between items-start gap-2 mb-2">
                 <h3 class="font-semibold text-diner-dark leading-snug">{item.name}</h3>
                 <span class="text-diner-red font-bold shrink-0">${item.price.toFixed(2)}</span>
