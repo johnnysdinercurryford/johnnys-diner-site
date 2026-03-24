@@ -198,13 +198,13 @@
           "name": "Drinks",
           "items": [
             { "name": "Milk (Small)", "price": 2.95, "description": "Cold, creamy, and refreshing." },
-            { "name": "Small Juice", "price": 2.95, "description": "Apple juice — sweet, crisp, and refreshing." },
+            { "name": "Small Juice", "price": 2.95, "description": "Your choice of apple, orange, tomato, grapefruit, or cranberry." },
             { "name": "Soft Drinks", "price": 2.99, "description": "Crisp and fizzy — choose from our selection of fountain drinks." },
-            { "name": "Hot Chocolate", "price": 2.99, "description": "Rich, creamy hot chocolate — a warm and cozy treat." },
+            { "name": "Hot Chocolate", "price": 2.99, "description": "Rich, creamy hot chocolate — a warm and cozy treat. Add whipped cream!" },
             { "name": "Tea", "price": 2.99, "description": "Refreshing and versatile — served hot or iced." },
             { "name": "Decaffeinated Coffee", "price": 2.99, "description": "All the rich flavor of our house blend, without the caffeine." },
             { "name": "Milk (Large)", "price": 3.50, "description": "Cold, creamy, and refreshing — a larger pour." },
-            { "name": "Large Juice", "price": 3.50, "description": "Apple juice — sweet, crisp, and refreshing in a larger size." }
+            { "name": "Large Juice", "price": 3.50, "description": "Your choice of apple, orange, tomato, grapefruit, or cranberry." }
           ]
         }
       ]
