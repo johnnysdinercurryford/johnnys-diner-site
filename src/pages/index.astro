@@ -6,8 +6,17 @@ import Layout from '../layouts/Layout.astro';
   <!-- Hero -->
   <section class="relative bg-diner-red overflow-hidden">
     <div class="absolute inset-0 opacity-10 stripe-bg"></div>
-    <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24 flex justify-center">
-      <div class="bg-white rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-xl hero-animate hero-animate-1" style="box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 40px;">
+    <div class="relative max-w-6xl mx-auto px-4 pt-10 pb-16 md:pt-14 md:pb-24 flex flex-col items-center gap-8">
+      <!-- 30 Years Banner -->
+      <div class="flex items-center gap-5 bg-white/15 backdrop-blur-sm border-2 border-white/40 px-10 py-4 rounded-full hero-animate hero-animate-1 shadow-lg">
+        <span class="font-black text-white text-6xl md:text-7xl leading-none" style="text-shadow: 2px 2px 0 rgba(0,0,0,0.2);">30</span>
+        <div class="w-px h-12 bg-white/40"></div>
+        <div>
+          <p class="font-black text-white text-lg md:text-xl uppercase tracking-widest leading-tight">Years</p>
+          <p class="font-display text-white/90 text-xl md:text-2xl leading-tight">In Business!</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-xl hero-animate hero-animate-2" style="box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 40px;">
         <img src="/logo.png" alt="Johnny's Diner" class="h-72 md:h-96 w-auto mx-auto mb-4" />
         <p class="text-diner-gray text-lg mb-8">Family owned & operated &mdash; Homestyle cooking since '95</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -17,16 +26,6 @@ import Layout from '../layouts/Layout.astro';
           <a href="tel:+14078688267" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95">
             Call Us
           </a>
-        </div>
-      </div>
-    </div>
-    <!-- 30 Years Banner -->
-    <div class="relative flex justify-center pb-8">
-      <div class="flex items-center gap-4 bg-[#F5C800] px-8 py-3 rounded-full shadow-lg">
-        <span class="font-black text-diner-red text-4xl leading-none" style="text-shadow: 1px 1px 0 #8B0000;">30</span>
-        <div class="text-left">
-          <p class="font-black text-diner-red text-sm uppercase tracking-widest leading-tight">Years</p>
-          <p class="font-display text-diner-red text-base leading-tight">In Business!</p>
         </div>
       </div>
     </div>
