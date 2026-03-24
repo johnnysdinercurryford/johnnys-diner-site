@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 const positions = {
   "Front of House": [
-    { title: "Server", desc: "Handle table service, orders, and food delivery. POS experience preferred." },
+    { title: "Server", desc: "Handle table service, orders, and food delivery. POS experience preferred.", open: false },
     { title: "Host", desc: "Greet guests, manage waitlists, seat diners efficiently, and serve drinks." },
     { title: "Busser", desc: "Reset tables, support service staff, and maintain cleanliness." },
   ],
@@ -61,9 +61,10 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
                 <h4 class="font-semibold text-diner-dark">{role.title}</h4>
                 <p class="text-sm text-diner-gray mt-1">{role.desc}</p>
               </div>
-              <a href="#application" class="shrink-0 text-sm font-medium text-diner-red hover:text-diner-red-dark transition-colors">
-                Apply &darr;
-              </a>
+              {role.open === false
+                ? <span class="shrink-0 text-xs font-medium text-diner-gray bg-diner-border/60 px-3 py-1 rounded-full">Not hiring</span>
+                : <a href="#application" class="shrink-0 text-sm font-medium text-diner-red hover:text-diner-red-dark transition-colors">Apply &darr;</a>
+              }
             </div>
           ))}
         </div>
