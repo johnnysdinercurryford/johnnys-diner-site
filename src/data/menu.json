@@ -185,7 +185,7 @@
             { "name": "Grilled Cheese", "price": 4.95, "description": "A gooey, melty grilled cheese sandwich on toasted bread — a kid favorite." },
             { "name": "1/4 Lb. Hamburger Patty", "price": 6.25, "description": "A juicy quarter-pound burger patty served plain so the kids can top it their way." },
             { "name": "Two Golden Brown Pancakes", "price": 7.75, "description": "A short stack of fluffy, golden brown pancakes — perfectly sized for little ones." },
-            { "name": "Chicken Strips", "price": 13.99, "description": "Two crispy, golden fried chicken tenders served with fries." }
+            { "name": "Chicken Strips", "price": 8.75, "description": "Two crispy, golden fried chicken tenders served with fries." }
           ]
         }
       ]
