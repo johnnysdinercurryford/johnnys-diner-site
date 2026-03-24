@@ -155,31 +155,32 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- About Snippet -->
-  <section class="bg-diner-red-light relative overflow-hidden max-w-full px-4 py-16 md:py-24">
-  <div class="absolute inset-0 stripe-bg-light"></div>
-  <div class="relative max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="slide-left">
-        <h2 class="font-display text-diner-red text-3xl md:text-4xl mb-4">Since 1995</h2>
-        <p class="text-diner-gray leading-relaxed mb-4">
-          What started as a humble 8-booth diner on Curry Ford Road has grown alongside the neighborhood
-          into Orlando's go-to spot for homestyle cookin'. We serve it hot off the flat-top,
-          with friendly faces and a fresh pot of coffee.
-        </p>
-        <p class="text-diner-gray leading-relaxed mb-6">
-          From fluffy buttermilk pancakes to hand-formed burgers and stacked sandwiches &mdash;
-          you're family the moment you walk in.
-        </p>
-        <a href="/about" class="text-diner-red font-semibold hover:text-diner-red-dark transition-colors">
-          Read Our Story &rarr;
-        </a>
+  <section class="bg-white relative overflow-hidden py-16 md:py-24">
+    <div class="relative max-w-3xl mx-auto px-4 text-center">
+      <p class="text-diner-red font-semibold text-sm uppercase tracking-widest mb-3 reveal">Curry Ford Road, Orlando</p>
+      <h2 class="font-display text-diner-dark text-4xl md:text-5xl mb-6 reveal">A Neighborhood Diner<br/>Done Right</h2>
+      <p class="text-diner-gray leading-relaxed text-lg mb-10 reveal">
+        What started as a humble 8-booth spot on Curry Ford Road has grown into Orlando's go-to for homestyle cookin'. Hot off the flat-top, friendly faces, and a fresh pot of coffee waiting for you every morning.
+      </p>
+      <!-- Stats row -->
+      <div class="flex flex-wrap justify-center gap-4 mb-10 reveal">
+        <div class="bg-diner-red-light border border-diner-border rounded-2xl px-8 py-5 text-center">
+          <div class="font-display text-4xl text-diner-red leading-none mb-1">31</div>
+          <div class="text-diner-gray text-xs uppercase tracking-widest font-semibold">Years Open</div>
+        </div>
+        <div class="bg-diner-red-light border border-diner-border rounded-2xl px-8 py-5 text-center">
+          <div class="font-display text-4xl text-diner-red leading-none mb-1">Est.</div>
+          <div class="text-diner-gray text-xs uppercase tracking-widest font-semibold">1995</div>
+        </div>
+        <div class="bg-diner-red-light border border-diner-border rounded-2xl px-8 py-5 text-center">
+          <div class="font-display text-4xl text-diner-red leading-none mb-1">100%</div>
+          <div class="text-diner-gray text-xs uppercase tracking-widest font-semibold">Family Owned</div>
+        </div>
       </div>
-      <div class="menu-card p-8 text-center slide-right">
-        <div class="font-display text-6xl text-diner-red mb-2">31</div>
-        <p class="text-diner-gray">Years Serving Orlando</p>
-      </div>
+      <a href="/about" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors reveal">
+        Read Our Story
+      </a>
     </div>
-  </div>
   </section>
 
   <!-- Highlights -->
