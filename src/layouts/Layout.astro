@@ -54,8 +54,36 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
         <!-- Desktop nav -->
         <ul class="hidden md:flex flex-1 items-center justify-center gap-2 text-base font-bold">
           <li><a href="/" class="px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">Home</a></li>
-          <li><a href="/menu" class="px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">Menu</a></li>
-          <li><a href="/about" class="px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">About Us</a></li>
+          <li class="relative group">
+            <a href="/menu" class="inline-flex items-center gap-1 px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">
+              Menu
+              <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="hidden group-hover:block absolute top-full left-0 pt-2 z-50 min-w-[190px]">
+              <div class="bg-white rounded-xl shadow-lg border border-diner-border py-1 text-sm font-medium">
+                <a href="/menu#breakfast" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Breakfast</a>
+                <a href="/menu#small-plates" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Small Plates &amp; Appetizers</a>
+                <a href="/menu#handhelds" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Handhelds</a>
+                <a href="/menu#dinners" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Dinners</a>
+                <a href="/menu#kids" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Kids Menu</a>
+                <a href="/menu#beverages" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Beverages</a>
+              </div>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="/about" class="inline-flex items-center gap-1 px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">
+              About Us
+              <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="hidden group-hover:block absolute top-full left-0 pt-2 z-50 min-w-[190px]">
+              <div class="bg-white rounded-xl shadow-lg border border-diner-border py-1 text-sm font-medium">
+                <a href="/about#story" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Our Story</a>
+                <a href="/about#awards" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">Awards &amp; Recognition</a>
+                <a href="/about#press" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">In the Press</a>
+                <a href="/about#values" class="block px-4 py-2 text-diner-dark hover:bg-diner-warm hover:text-diner-red transition-colors">What We Stand For</a>
+              </div>
+            </div>
+          </li>
           <li><a href="/reviews" class="px-4 py-1.5 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red hover:scale-125 transition-all duration-200">Reviews</a></li>
           <li><a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#FF3008]/40 bg-white shadow-sm text-[#FF3008] hover:bg-[#FF3008] hover:text-white hover:border-[#FF3008] hover:scale-125 transition-all duration-200">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.057 15.6H7.714V8.4h6.343c1.986 0 3.6 1.614 3.6 3.6s-1.614 3.6-3.6 3.6z"/></svg>
@@ -77,8 +105,32 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
       <div id="mobile-menu" class="hidden md:hidden border-t border-diner-border">
         <ul class="flex flex-col px-4 py-3 gap-2 text-sm font-bold">
           <li><a href="/" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Home</a></li>
-          <li><a href="/menu" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Menu</a></li>
-          <li><a href="/about" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">About Us</a></li>
+          <li>
+            <button class="mobile-submenu-btn w-full flex items-center justify-between px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200" data-target="mobile-menu-submenu">
+              <span>Menu</span>
+              <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <ul id="mobile-menu-submenu" class="hidden mt-1 ml-4 flex flex-col gap-1">
+              <li><a href="/menu#breakfast" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Breakfast</a></li>
+              <li><a href="/menu#small-plates" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Small Plates &amp; Appetizers</a></li>
+              <li><a href="/menu#handhelds" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Handhelds</a></li>
+              <li><a href="/menu#dinners" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Dinners</a></li>
+              <li><a href="/menu#kids" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Kids Menu</a></li>
+              <li><a href="/menu#beverages" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Beverages</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="mobile-submenu-btn w-full flex items-center justify-between px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200" data-target="mobile-about-submenu">
+              <span>About Us</span>
+              <svg class="mobile-submenu-chevron w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <ul id="mobile-about-submenu" class="hidden mt-1 ml-4 flex flex-col gap-1">
+              <li><a href="/about#story" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Our Story</a></li>
+              <li><a href="/about#awards" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">Awards &amp; Recognition</a></li>
+              <li><a href="/about#press" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">In the Press</a></li>
+              <li><a href="/about#values" class="block px-4 py-1.5 rounded-full text-sm text-diner-dark border border-diner-border bg-white hover:bg-diner-warm hover:text-diner-red transition-colors">What We Stand For</a></li>
+            </ul>
+          </li>
           <li><a href="/reviews" class="block px-4 py-2 rounded-full border border-diner-border bg-white shadow-sm hover:bg-diner-red hover:text-white hover:border-diner-red transition-all duration-200">Reviews</a></li>
           <li><a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#FF3008]/40 bg-white shadow-sm text-[#FF3008] hover:bg-[#FF3008] hover:text-white hover:border-[#FF3008] transition-all duration-200">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.057 15.6H7.714V8.4h6.343c1.986 0 3.6 1.614 3.6 3.6s-1.614 3.6-3.6 3.6z"/></svg>
@@ -162,6 +214,17 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
     </footer>
 
     <script>
+      document.querySelectorAll('.mobile-submenu-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetId = (btn as HTMLElement).dataset.target;
+          const submenu = document.getElementById(targetId!);
+          const chevron = btn.querySelector('.mobile-submenu-chevron');
+          const isHidden = submenu?.classList.contains('hidden');
+          submenu?.classList.toggle('hidden');
+          chevron?.classList.toggle('rotate-180', !!isHidden);
+        });
+      });
+
       const btn = document.getElementById('mobile-menu-btn');
       const menu = document.getElementById('mobile-menu');
       const icon = document.getElementById('menu-icon');
