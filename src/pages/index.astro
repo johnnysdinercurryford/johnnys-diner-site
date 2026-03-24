@@ -35,8 +35,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- About Snippet -->
-  <section class="bg-diner-red-light max-w-full px-4 py-16 md:py-24">
-  <div class="max-w-6xl mx-auto">
+  <section class="bg-diner-red-light relative overflow-hidden max-w-full px-4 py-16 md:py-24">
+  <div class="absolute inset-0 stripe-bg-light"></div>
+  <div class="relative max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="reveal">
         <h2 class="font-display text-diner-red text-3xl md:text-4xl mb-4">Since 1995</h2>
@@ -72,8 +73,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Highlights -->
-  <section class="bg-diner-yellow py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4">
+  <section class="bg-diner-yellow relative overflow-hidden py-16 md:py-24">
+    <div class="absolute inset-0 stripe-bg-light"></div>
+    <div class="relative max-w-6xl mx-auto px-4">
       <h2 class="font-display text-diner-red text-3xl md:text-4xl text-center mb-12 reveal">Why Orlando Loves Us</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="menu-card p-6 text-center reveal">
@@ -109,8 +111,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Awards -->
-  <section class="bg-diner-cream py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4">
+  <section class="bg-diner-cream relative overflow-hidden py-16 md:py-24">
+    <div class="absolute inset-0 stripe-bg-light"></div>
+    <div class="relative max-w-6xl mx-auto px-4">
       <h2 class="font-display text-diner-red text-3xl md:text-4xl text-center mb-2 reveal">Awards & Recognition</h2>
       <p class="text-center text-diner-gray mb-12 reveal">Orlando Sentinel Foodie Awards &mdash; Readers Choice 2026</p>
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -121,6 +124,21 @@ import Layout from '../layouts/Layout.astro';
           <img src="/award-best-breakfast.jpg" alt="Orlando Sentinel Foodie Awards — Readers Choice Best Breakfast 2026" class="w-full h-auto" />
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Delivery -->
+  <section class="bg-diner-dark relative overflow-hidden py-16 md:py-20">
+    <div class="absolute inset-0 opacity-10 stripe-bg"></div>
+    <div class="relative max-w-6xl mx-auto px-4 text-center reveal">
+      <h2 class="font-display text-white text-3xl md:text-4xl mb-3">Order Delivery</h2>
+      <p class="text-white/60 mb-10">Can't make it in? We've got you covered.</p>
+      <a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-4 bg-[#FF3008] hover:bg-[#e02a07] transition-colors text-white font-bold text-xl px-10 py-5 rounded-full">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5h-9a.5.5 0 010-1h.5v-5h-.5a.5.5 0 010-1h4a.5.5 0 010 1h-.5v5h4v-5h-.5a.5.5 0 010-1h2a.5.5 0 010 1h-.5v5h.5a.5.5 0 010 1z"/>
+        </svg>
+        Order on DoorDash
+      </a>
     </div>
   </section>
 
