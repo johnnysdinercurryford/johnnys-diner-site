@@ -7,32 +7,32 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative bg-diner-red overflow-hidden">
     <div class="absolute inset-0 opacity-10 stripe-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24 flex justify-center">
-      <div class="relative rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-2xl hero-animate hero-animate-1" style="background: linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.88) 50%, rgba(255,229,229,0.82) 100%); box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 40px;">
+      <div class="relative rounded-[22px] border-[3px] border-diner-red text-center w-full max-w-2xl hero-animate hero-animate-1" style="background: linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.88) 50%, rgba(255,229,229,0.82) 100%); box-shadow: 0 10px 25px rgba(0,0,0,0.28); padding: 28px 32px 24px;">
         <!-- 31 Years Badge -->
         <div class="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-diner-dark border border-white/20 px-5 py-1.5 rounded-full shadow-lg">
           <span class="font-black text-[#F5C800] text-xl leading-none">31</span>
           <div class="w-px h-4 bg-white/30"></div>
           <span class="font-bold text-white text-xs uppercase tracking-widest">Years In Business</span>
         </div>
-        <img src="/logo.png" alt="Johnny's Diner" class="h-72 md:h-96 w-auto mx-auto mb-4" />
-        <p class="text-diner-gray text-lg mb-8">Family Owned & Operated<br/>Homestyle Cooking Since 1995</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/menu" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95">
+        <img src="/logo.png" alt="Johnny's Diner" class="h-60 md:h-72 w-auto mx-auto mb-1 mt-1" />
+        <p class="font-display text-diner-red/70 text-2xl md:text-3xl mb-4">Family Owned & Operated<br/>Homestyle Cooking Since 1995</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center mb-2">
+          <a href="/menu" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95 shadow-md">
             View Our Menu
           </a>
-          <a href="tel:+14078688267" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95">
+          <a href="tel:+14078688267" class="inline-block bg-white text-diner-red font-semibold px-8 py-3 rounded-full border-2 border-diner-red hover:bg-diner-red hover:text-white transition-colors active:scale-95">
             Call Us
           </a>
         </div>
         <!-- Social links -->
-        <div class="flex items-center justify-center gap-3 mt-6 pt-6 border-t border-diner-border">
-          <a href="https://www.facebook.com/profile.php?id=61576530234741" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full border-2 border-diner-border flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition-all duration-200">
+        <div class="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-diner-border">
+          <a href="https://www.facebook.com/profile.php?id=61576530234741" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full flex items-center justify-center text-white bg-[#1877F2] hover:opacity-80 transition-opacity">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="https://www.instagram.com/johnnysdinercurryford" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full border-2 border-diner-border flex items-center justify-center text-[#E1306C] hover:bg-gradient-to-br hover:from-[#f09433] hover:via-[#e6683c] hover:via-[#dc2743] hover:via-[#cc2366] hover:to-[#bc1888] hover:text-white hover:border-transparent transition-all duration-200">
+          <a href="https://www.instagram.com/johnnysdinercurryford" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity" style="background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
           </a>
-          <a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" aria-label="DoorDash" class="w-11 h-11 rounded-full border-2 border-diner-border flex items-center justify-center text-[#FF3008] hover:bg-[#FF3008] hover:text-white hover:border-[#FF3008] transition-all duration-200">
+          <a href="https://www.doordash.com/store/johnny's-diner-curry-ford-orlando-37556239/85104946/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqb2hubnlzIGRpbmVyIGN1cnJ5Zm9yZCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJqb2hubnkgZGluZXIgY3Vycnlmb3JkIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJTVE9SRV9SWCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsMTEwMDQ1LDRdfQ==&pickup=false" target="_blank" rel="noopener noreferrer" aria-label="DoorDash" class="w-11 h-11 rounded-full flex items-center justify-center text-white bg-[#FF3008] hover:opacity-80 transition-opacity">
             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.057 15.6H7.714V8.4h6.343c1.986 0 3.6 1.614 3.6 3.6s-1.614 3.6-3.6 3.6z"/></svg>
           </a>
         </div>
