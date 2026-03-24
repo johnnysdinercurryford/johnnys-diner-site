@@ -29,11 +29,13 @@ html {
 
 .stripe-bg {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.3) 10px, rgba(255,255,255,0.3) 20px);
+  background-size: 28.28px 28.28px;
   animation: stripe-slide 3s linear infinite;
 }
 
 .stripe-bg-light {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(245,3,1,0.07) 10px, rgba(245,3,1,0.07) 20px);
+  background-size: 28.28px 28.28px;
   animation: stripe-slide 3s linear infinite;
 }
 
