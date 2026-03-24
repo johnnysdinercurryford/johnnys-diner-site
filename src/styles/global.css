@@ -72,6 +72,16 @@ html {
 .hero-animate-4 { animation-delay: 1.2s; }
 .hero-animate-5 { animation-delay: 1.2s; }
 
+/* Logo card flip on hover */
+.logo-card {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.logo-card:hover {
+  transform: rotateY(180deg);
+}
+
 /* Hero badge slide in from right */
 @keyframes fade-from-right {
   from {
