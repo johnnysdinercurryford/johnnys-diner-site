@@ -12,20 +12,20 @@ import Layout from '../layouts/Layout.astro';
     />
     <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20"></div>
     <div class="relative max-w-6xl mx-auto px-6 py-14 md:py-32 w-full">
-      <div class="max-w-xl hero-animate hero-animate-1">
+      <div class="max-w-xl flex flex-col items-center text-center md:items-start md:text-left">
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 bg-black/60 border border-white/20 px-5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+        <div class="hero-animate hero-animate-1 inline-flex items-center gap-2 bg-black/60 border border-white/20 px-5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
           <span class="font-black text-[#F5C800] text-xl leading-none">31</span>
           <div class="w-px h-4 bg-white/30"></div>
           <span class="font-bold text-white text-xs uppercase tracking-widest">Years In Business</span>
         </div>
-        <div class="flex items-center justify-center rounded-full w-36 h-36 md:w-64 md:h-64 mb-4 shadow-xl p-3 md:p-4" style="background: radial-gradient(circle, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.05) 100%); backdrop-filter: blur(4px);">
+        <div class="hero-animate hero-animate-2 flex items-center justify-center rounded-full w-36 h-36 md:w-64 md:h-64 mb-4 shadow-xl p-3 md:p-4" style="background: radial-gradient(circle, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.05) 100%); backdrop-filter: blur(4px);">
           <img src="/logo.png" alt="Johnny's Diner" class="w-full h-auto" />
         </div>
-        <p class="font-bold text-diner-red text-xl md:text-3xl mb-2 tracking-wide uppercase">Breakfast, Lunch &amp; Dinner</p>
-        <p class="text-white/80 text-base md:text-lg font-medium mb-2">Curry Ford Road &mdash; Orlando, FL</p>
-        <p class="text-white/90 font-semibold text-lg md:text-2xl mb-6 leading-snug">Family Owned &amp; Operated<br/>Homestyle Cooking Since 1995</p>
-        <div class="flex flex-col sm:flex-row gap-3 mb-8">
+        <p class="hero-animate hero-animate-3 font-bold text-diner-red text-xl md:text-3xl mb-2 tracking-wide uppercase">Breakfast, Lunch &amp; Dinner</p>
+        <p class="hero-animate hero-animate-3 text-white/80 text-base md:text-lg font-medium mb-2">Curry Ford Road &mdash; Orlando, FL</p>
+        <p class="hero-animate hero-animate-3 text-white/90 font-semibold text-lg md:text-2xl mb-6 leading-snug">Family Owned &amp; Operated<br/>Homestyle Cooking Since 1995</p>
+        <div class="hero-animate hero-animate-4 flex flex-col sm:flex-row gap-3 mb-8">
           <a href="/menu" class="inline-block bg-diner-red text-white font-semibold px-8 py-3 rounded-full hover:bg-diner-red-dark transition-colors active:scale-95 shadow-md text-center">
             View Our Menu
           </a>
@@ -34,13 +34,13 @@ import Layout from '../layouts/Layout.astro';
           </a>
         </div>
         <!-- Google rating -->
-        <a href="https://www.google.com/search?q=Johnny%27s+Diner+Curry+Ford+Orlando+reviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mb-5 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full text-white text-sm hover:bg-white/20 transition-colors">
+        <a href="https://www.google.com/search?q=Johnny%27s+Diner+Curry+Ford+Orlando+reviews" target="_blank" rel="noopener noreferrer" class="hero-animate hero-animate-5 inline-flex items-center gap-2 mb-5 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full text-white text-sm hover:bg-white/20 transition-colors">
           <span class="text-[#FBBC04] tracking-tight text-base">★★★★★</span>
           <span class="font-medium">Highly Rated on Google</span>
           <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
         </a>
         <!-- Social links -->
-        <div class="flex items-center gap-4">
+        <div class="hero-animate hero-animate-5 flex items-center gap-4">
           <a href="https://www.facebook.com/profile.php?id=61576530234741" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full flex items-center justify-center text-white bg-[#1877F2] hover:opacity-80 transition-opacity">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
