@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-diner-red: #E53935;
-  --color-diner-red-dark: #C62828;
+  --color-diner-red: #F50301;
+  --color-diner-red-dark: #CC0000;
   --color-diner-red-light: #FFF1EF;
   --color-diner-red-tint: #FFE5E5;
   --color-diner-cream: #FFFAF8;
   --color-diner-warm: #FFF5F0;
   --color-diner-yellow: #FFF8E1;
   --color-diner-gold: #F59E0B;
-  --color-diner-dark: #1A1A1A;
-  --color-diner-gray: #4A4A4A;
+  --color-diner-dark: #111111;
+  --color-diner-gray: #555555;
   --color-diner-border: #E8E0DC;
   --font-display: "Lobster", cursive;
   --font-body: "Inter", sans-serif;
@@ -81,8 +81,8 @@ html {
   background-color: #FFFAF8;
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(255, 77, 77, 0.03),
-    rgba(255, 77, 77, 0.03) 4px,
+    rgba(245, 3, 1, 0.04),
+    rgba(245, 3, 1, 0.04) 4px,
     transparent 4px,
     transparent 14px
   );
