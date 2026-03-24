@@ -124,6 +124,13 @@ html {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.13);
 }
 
+/* Coffee bean background pattern */
+.coffee-bg {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g transform='translate(20,22) rotate(25)'><ellipse cx='0' cy='0' rx='10' ry='6.5' fill='rgba(139,90,43,0.11)'/><path d='M-10,0 C-4,-4 4,-4 10,0' fill='none' stroke='rgba(139,90,43,0.18)' stroke-width='1.2'/></g><g transform='translate(60,57) rotate(-20)'><ellipse cx='0' cy='0' rx='10' ry='6.5' fill='rgba(139,90,43,0.11)'/><path d='M-10,0 C-4,-4 4,-4 10,0' fill='none' stroke='rgba(139,90,43,0.18)' stroke-width='1.2'/></g></svg>");
+  background-size: 80px 80px;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--color-diner-dark);
