@@ -167,14 +167,29 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
 
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-      // Carousel
+      // Carousel — infinite loop
       const carousel = document.getElementById('carousel');
       const prevBtn = document.getElementById('carousel-prev');
       const nextBtn = document.getElementById('carousel-next');
-      if (carousel && prevBtn && nextBtn) {
-        const scrollAmt = () => carousel.querySelector('div')?.offsetWidth + 16 || 320;
-        prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmt(), behavior: 'smooth' }));
-        nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }));
+      if (carousel) {
+        // Clone all items and append for infinite effect
+        const items = Array.from(carousel.children);
+        items.forEach(item => carousel.appendChild(item.cloneNode(true)));
+
+        const scrollAmt = () => (carousel.querySelector('div')?.offsetWidth || 300) + 16;
+
+        prevBtn?.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmt(), behavior: 'smooth' }));
+        nextBtn?.addEventListener('click', () => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }));
+
+        // Reset to start when reaching the cloned section
+        carousel.addEventListener('scroll', () => {
+          const half = carousel.scrollWidth / 2;
+          if (carousel.scrollLeft >= half) carousel.scrollLeft -= half;
+          if (carousel.scrollLeft <= 0) carousel.scrollLeft += half;
+        });
+
+        // Auto-scroll
+        setInterval(() => carousel.scrollBy({ left: scrollAmt(), behavior: 'smooth' }), 3000);
       }
     </script>
   </body>
