@@ -93,6 +93,10 @@ const categories = menuData.categories;
     const pdfChevron = document.getElementById('pdf-chevron');
 
     pdfBtn?.addEventListener('click', () => {
+      if (window.innerWidth < 768) {
+        window.open('/menu.pdf', '_blank');
+        return;
+      }
       const isHidden = pdfViewer?.classList.contains('hidden');
       pdfViewer?.classList.toggle('hidden');
       if (pdfLabel) pdfLabel.textContent = isHidden ? 'Close Menu PDF' : 'View Full Menu (PDF)';

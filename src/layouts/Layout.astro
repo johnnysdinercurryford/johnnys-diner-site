@@ -283,6 +283,13 @@ const { title, description = "Johnny's Diner — Family owned & operated since 1
 
       document.querySelectorAll('.reveal, .slide-left, .slide-right').forEach((el) => observer.observe(el));
 
+      // Logo card flip — only on real hover devices (not touch)
+      const logoCard = document.querySelector('.logo-card') as HTMLElement | null;
+      if (logoCard && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        logoCard.addEventListener('mouseenter', () => { logoCard.style.transform = 'rotateY(180deg)'; });
+        logoCard.addEventListener('mouseleave', () => { logoCard.style.transform = ''; });
+      }
+
       // Carousel — infinite loop
       const carousel = document.getElementById('carousel');
       const prevBtn = document.getElementById('carousel-prev');
