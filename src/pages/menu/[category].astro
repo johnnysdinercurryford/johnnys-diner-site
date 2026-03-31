@@ -48,6 +48,10 @@ const allCategories = menuData.categories;
 
   <!-- Menu Items -->
   <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="mb-8 pb-4 border-b border-diner-border">
+      <h2 class="font-display text-diner-red text-3xl">{category.name}</h2>
+      {category.note && <p class="text-diner-gray mt-1">{category.note}</p>}
+    </div>
     {category.subcategories.map((sub) => (
       <div class="mb-12">
         <div class="mb-6">
