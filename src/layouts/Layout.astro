@@ -340,7 +340,8 @@ const { title, description = "Johnny's Diner — Orlando's favorite family-owned
           const tomorrowOpen = tomorrowDay === 0 ? '7am' : '6am';
           nextOpenLabel = 'tomorrow at ' + tomorrowOpen;
         }
-        badgeHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-diner-dark text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>Closed \u00b7 Opens ' + nextOpenLabel + '</span>';
+        const closedLabel = isEaster ? 'Happy Easter! \u00b7 Opens ' + nextOpenLabel : 'Closed \u00b7 Opens ' + nextOpenLabel;
+        badgeHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-diner-dark text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>' + closedLabel + '</span>';
       }
 
       const navBadge = document.getElementById('nav-hours-badge');
