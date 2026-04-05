@@ -307,14 +307,33 @@ const { title, description = "Johnny's Diner — Orlando's favorite family-owned
       const day = now.getDay(); // 0=Sun, 1=Mon...6=Sat
       const hour = now.getHours() + now.getMinutes() / 60;
       const openHour = day === 0 ? 7 : 6; // Sun opens at 7am, all others 6am
-      const isOpen = hour >= openHour && hour < 15;
+
+      // Check for Easter Sunday (closed all day)
+      function getEasterSunday(year) {
+        const a = year % 19, b = Math.floor(year / 100), c = year % 100;
+        const d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25);
+        const g = Math.floor((b - f + 1) / 3);
+        const h = (19 * a + b - d - g + 15) % 30;
+        const i = Math.floor(c / 4), k = c % 4;
+        const l = (32 + 2 * e + 2 * i - h - k) % 7;
+        const m = Math.floor((a + 11 * h + 22 * l) / 451);
+        const month = Math.floor((h + l - 7 * m + 114) / 31);
+        const dy = ((h + l - 7 * m + 114) % 31) + 1;
+        return new Date(year, month - 1, dy);
+      }
+      const easter = getEasterSunday(now.getFullYear());
+      const isEaster = now.getMonth() === easter.getMonth() && now.getDate() === easter.getDate();
+
+      const isOpen = !isEaster && hour >= openHour && hour < 15;
 
       let badgeHTML;
       if (isOpen) {
         badgeHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-green-600 text-white shadow-sm"><span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>Open until 3pm</span>';
       } else {
         let nextOpenLabel;
-        if (hour < openHour) {
+        if (isEaster) {
+          nextOpenLabel = 'Monday at 6am';
+        } else if (hour < openHour) {
           nextOpenLabel = 'today at ' + (openHour === 7 ? '7am' : '6am');
         } else {
           const tomorrowDay = (day + 1) % 7;
