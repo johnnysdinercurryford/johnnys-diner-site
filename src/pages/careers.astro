@@ -260,7 +260,32 @@ const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
         </fieldset>
 
         <!-- Why Join -->
+        <!-- Emergency Contact -->
+      <div class="space-y-4">
         <div>
+          <h3 class="text-lg font-semibold text-diner-dark">Emergency Contact</h3>
+          <p class="text-sm text-diner-gray">Please provide someone we can contact in case of an emergency.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label for="emergency-contact-name" class="block text-sm font-medium text-diner-dark mb-1">Full Name *</label>
+            <input type="text" id="emergency-contact-name" name="emergency_contact_name" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+          </div>
+
+          <div>
+            <label for="emergency-contact-relationship" class="block text-sm font-medium text-diner-dark mb-1">Relationship *</label>
+            <input type="text" id="emergency-contact-relationship" name="emergency_contact_relationship" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+          </div>
+
+          <div>
+            <label for="emergency-contact-phone" class="block text-sm font-medium text-diner-dark mb-1">Phone Number *</label>
+            <input type="tel" id="emergency-contact-phone" name="emergency_contact_phone" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red" />
+          </div>
+        </div>
+      </div>
+
+      <div>
           <label for="why-join" class="block text-sm font-medium text-diner-dark mb-1">Why do you want to join our team? *</label>
           <textarea id="why-join" name="why_join" rows="4" required class="w-full rounded-lg border border-diner-border px-3 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-diner-red/30 focus:border-diner-red resize-y"></textarea>
         </div>
